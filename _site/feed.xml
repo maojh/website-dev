@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codice Inutile</title>
+    <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 28 Oct 2016 20:32:54 +0200</pubDate>
+    <lastBuildDate>Fri, 28 Oct 2016 20:32:54 +0200</lastBuildDate>
+    <generator>Jekyll v3.3.0</generator>
+    
+      <item>
+        <title>Workshop Creative Coding a settembre (Verona)</title>
+        <description>&lt;p&gt;Partiamo da un presupposto: tutti possono imparare a programmare. La domanda che sorge spontanea, però, è: perché dovresti farlo? Nell’immaginario comune i programmatori sono dei nerd chiusi in stanze buie che fanno un lavoro noioso; imparare a programmare, però, significa acquisire una metodologia di pensiero e di risoluzione di problemi che può tornare utile anche nella vita quotidiana oltre a competenze sempre più richieste nel mondo del lavoro. In particolare, quando si rientra nell’ambito del creative coding la programmazione può essere utilizzata come mezzo per esprimersi creativamente.&lt;/p&gt;
+
+&lt;p&gt;Lo scopo di questo workshop, suddiviso in tre moduli, è quello di offrire una conoscenza di base del linguaggio di programmazione Processing e sviluppare dei progetti di arte generativa e di data visualization.&lt;/p&gt;
+
+&lt;h2 id=&quot;modulo-1-processing-base-3-4-settembre&quot;&gt;Modulo 1: Processing Base (3-4 settembre)&lt;/h2&gt;
+&lt;p&gt;Tenuto da: &lt;strong&gt;Federico Pepe&lt;/strong&gt;, &lt;strong&gt;location:&lt;/strong&gt; questo modulo si terrà presso &lt;a href=&quot;http://www.311verona.com&quot;&gt;311 Verona&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lo scopo di questo primo modulo è fornire una preparazione di base sul linguaggio di programmazione Processing necessaria per affrontare i due moduli successivi. Il percorso parte da zero e accompagna i partecipanti nella scoperta di tutti le componenti fondamentali di questo linguaggio necessari per realizzare piccoli e grandi progetti: dalle primitive 2D, ai controlli condizionali, dalle funzioni personalizzate alla programmazione orientata agli oggetti.&lt;/p&gt;
+
+&lt;h3 id=&quot;argomenti-trattati&quot;&gt;Argomenti trattati&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduzione al Creative Coding e a Processing&lt;/li&gt;
+  &lt;li&gt;Primitive 2D&lt;/li&gt;
+  &lt;li&gt;Colori: da B/N a RGB&lt;/li&gt;
+  &lt;li&gt;Flusso del programma: setup e draw&lt;/li&gt;
+  &lt;li&gt;Variabili built-in e variabili personalizzate&lt;/li&gt;
+  &lt;li&gt;Eventi&lt;/li&gt;
+  &lt;li&gt;Controlli condizionali&lt;/li&gt;
+  &lt;li&gt;Loop&lt;/li&gt;
+  &lt;li&gt;Funzioni personalizzate&lt;/li&gt;
+  &lt;li&gt;OOP: Programmazione Orientata agli Oggetti&lt;/li&gt;
+  &lt;li&gt;Array&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;modulo-2-generative-design-10-11-settembre&quot;&gt;Modulo 2: Generative Design (10-11 settembre)&lt;/h2&gt;
+&lt;p&gt;Tenuto da: &lt;strong&gt;Alka Cappellazzo&lt;/strong&gt;, &lt;strong&gt;location&lt;/strong&gt;: questo modulo si terrà presso &lt;a href=&quot;http://www.linosandco.com&quot;&gt;Lino’s and Co&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Attraverso un algoritmo e funzioni randomiche si possono generare forme, modelli e patterns unici. Il corso esplora l’affascinante mondo del Design generativo, dove il codice e l’inventiva si fondono per dare vita a incredibili composizioni. Infine, con le basi del linguaggio di programmazione Processing fornite durante il corso, i partecipanti sono in grado di creare degli originali patterns, in un contesto collaborativo e open source. A fine percorso è prevista la stampa digitale dei propri lavori con affiancato il codice che li ha generati.&lt;/p&gt;
+
+&lt;h2 id=&quot;argomenti-trattati-1&quot;&gt;Argomenti trattati&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Generative art for everyone, breve panoramica sull’arte generativa che miri a coinvolgere e motivare a partecipanti.&lt;/li&gt;
+  &lt;li&gt;Caos e funzioni matematiche, parte pratica, matematica e arte sono alla portata di tutti!&lt;/li&gt;
+  &lt;li&gt;Ritmo, ripetizione e pattern, i concetti chiave per sviluppare forme generative.&lt;/li&gt;
+  &lt;li&gt;Funzioni cos e sin&lt;/li&gt;
+  &lt;li&gt;Costanti PI&lt;/li&gt;
+  &lt;li&gt;La funzione random&lt;/li&gt;
+  &lt;li&gt;La funzione noise&lt;/li&gt;
+  &lt;li&gt;Creazione del proprio lavoro&lt;/li&gt;
+  &lt;li&gt;Stampa del progetto&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;modulo-3-data-visualization-17-18-settembre&quot;&gt;Modulo 3: Data Visualization (17-18 settembre)&lt;/h2&gt;
+&lt;p&gt;Tenuto da: &lt;strong&gt;Federico Pepe&lt;/strong&gt;, &lt;strong&gt;location&lt;/strong&gt;: questo modulo si terrà presso &lt;a href=&quot;http://www.izona.it&quot;&gt;Interzona&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nell’era dei Big Data chi fa informazione si deve scontrare con un nuovo problema: rendere chiari e fruibili la miriade di dati di cui disponiamo anche, e soprattutto, per spiegare fenomeni complessi. Excel è uno dei software più usati per l’analisi dei dati e, allo stesso tempo, uno dei programmi più lontani dal mondo del design. Grazie a Processing è possibile programmare il computer per acquisire, filtrare e organizzare grandi moli di dati per restituirne esempi graficamente facili da comprendere e analizzare.&lt;/p&gt;
+
+&lt;p&gt;Dopo aver affrontato i concetti di base di programmazione nel primo modulo, nel secondo i partecipanti verranno guidati nella realizzazione di una visualizzazione di dati. Il percorso prevede dapprima l’utilizzo di un database “statico” fornito dal docente; successivamente ai partecipanti verrà spiegato come raccogliere dati in tempo reale attraverso le API di varie piattaforme (ad esempio Twitter, Instagram, ecc…).&lt;/p&gt;
+
+&lt;h2 id=&quot;iscrizioni&quot;&gt;Iscrizioni&lt;/h2&gt;
+&lt;p&gt;Per iscriversi è necessario compilare il modulo a questo indirizzo: &lt;a href=&quot;http://bit.ly/WorkshopProcessingVR&quot;&gt;http://bit.ly/WorkshopProcessingVR&lt;/a&gt; e versare la quota di partecipazione a mezzo bonifico bancario.&lt;/p&gt;
+
+&lt;h3 id=&quot;costi&quot;&gt;Costi&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;€ 100,00 per un modulo&lt;/li&gt;
+  &lt;li&gt;€ 180,00 per due moduli&lt;/li&gt;
+  &lt;li&gt;€ 250, 00 per tre moduli.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTA&lt;/strong&gt;: Per frequentare il secondo e terzo modulo è necessario frequentare il primo o dimostrare di avere già una conoscenza di base di Processing.&lt;/p&gt;
+
+&lt;h3 id=&quot;il-workshop--realizzato-in-collaborazione-con&quot;&gt;Il workshop è realizzato in collaborazione con&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.jpg&quot; alt=&quot;Lino's and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.izona.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_interzona.jpg&quot; alt=&quot;Interzona&quot; height=&quot;50px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.jpg&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jul 2016 11:39:00 +0200</pubDate>
+        <link>http://localhost:4000/workshop/2016/07/20/workshop_creative_coding_verona.html</link>
+        <guid isPermaLink="true">http://localhost:4000/workshop/2016/07/20/workshop_creative_coding_verona.html</guid>
+        
+        <category>Processing</category>
+        
+        <category>Workshop</category>
+        
+        <category>Verona</category>
+        
+        
+        <category>workshop</category>
+        
+      </item>
+    
+  </channel>
+</rss>
