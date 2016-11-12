@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<<<<<<< HEAD
 <div class="home">
 
   <h1 class="page-heading">News</h1>
@@ -19,3 +20,54 @@ layout: default
   </ul>
 
 </div>
+=======
+<div class="cover flexbox-container">
+  <div class="navbox">
+    {% include icon-logo.html width="75" %}
+    <ul class="center-nav">
+      <li class="active"><a href="#about">Eventi</a></li>
+      <li><a href="#contact">Progetti</a></li>
+      <li><a href="#contact">People</a></li>
+      <li><a href="#contact">About</a></li>
+      <li><a href="#contact">Press</a></li>
+    </ul>
+  </div>
+  <div class="title">
+    <ul>
+      <li>Casaccio | <a href="#">Ignoto</a></li>
+      <li><i>Css 3, gradienti</i></li>
+    </ul>
+    <ul>
+      <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+  <div class="down">
+    <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12">
+       <div class="row">
+         <h3>News</h3>
+        {% for post in site.posts %}
+         <div class="col-xs-12 col-sm-6 col-lg-4">
+           <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+           {{ post.excerpt }}
+         </div>
+        {% endfor %}
+      </div><!--/row-->
+    </div><!--/.col-xs-12.col-sm-9-->
+    <div class="sidebar-offcanvas hide" id="sidebar">
+      <div class="list-group">
+        <a href="#" class="list-group-item active">GitHub</a>
+        <a href="#" class="list-group-item">Facebook</a>
+        <a href="#" class="list-group-item">Twitter</a>
+        <a href="#" class="list-group-item">Newsletter</a>
+        <a href="logoCi.html" class="list-group-item">logoCi</a>
+      </div>
+    </div><!--/.sidebar-offcanvas-->
+  </div> <!--/row-->
+</div><!--/.container-->
+>>>>>>> parent of 1abdc69... Merge pull request #1 from cybermarinella/master
