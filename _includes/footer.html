@@ -1,7 +1,11 @@
 
 <footer class="site-footer">
   <div class="container">
-     <small>&copy; 2016 Codice Inutile ♥ è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</small>
+    <div class="row">
+      <div class="col-xs-12">
+        <p><small>&copy; 2016 Codice Inutile ♥ è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</small></p>
+      </div>
+    </div>
   </div>
 
   <!-- GOOGLE ANALYTICS -->
@@ -20,5 +24,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Show navbar on scroll -->
+  <script>
+  $(document).ready(function(){
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+      $(window).scroll(function () {
+        // set distance user needs to scroll before we start fadeIn
+        if ($(this).scrollTop() > 100) {
+          $('.navbar').fadeIn();
+        } else {
+          $('.navbar').fadeOut();
+        }
+        });
+    });
+  });
+  </script>
 
 </footer>

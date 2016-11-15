@@ -68,24 +68,39 @@
   <body>
 
     <header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Codice Inutile</a>
+    </div>
 
-  <nav class="navbar navbar-fixed-top hide">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">CODICE INUTILE ♥</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">Eventi</a></li>
-            <li><a href="#contact">Progetti</a></li>
-            <li><a href="#contact">People</a></li>
-            <li><a href="#contact">About</a></li>
-            <li><a href="#contact">Press</a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Ricerca</a></li>
+        <li><a href="#">Formazione</a></li>
+        <li><a href="#">Progetti</a></li>
+        <li><a href="#">Persone</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chi siamo <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Manifesto</a></li>
+            <li><a href="#">Meetup</a></li>
           </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
-
+        </li>
+        <li><a href="#">Contattaci</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
 </header>
 
 
@@ -174,7 +189,11 @@
     
 <footer class="site-footer">
   <div class="container">
-     <small>&copy; 2016 Codice Inutile ♥ è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</small>
+    <div class="row">
+      <div class="col-xs-12">
+        <p><small>&copy; 2016 Codice Inutile ♥ è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</small></p>
+      </div>
+    </div>
   </div>
 
   <!-- GOOGLE ANALYTICS -->
@@ -193,6 +212,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Show navbar on scroll -->
+  <script>
+  $(document).ready(function(){
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+      $(window).scroll(function () {
+        // set distance user needs to scroll before we start fadeIn
+        if ($(this).scrollTop() > 100) {
+          $('.navbar').fadeIn();
+        } else {
+          $('.navbar').fadeOut();
+        }
+        });
+    });
+  });
+  </script>
 
 </footer>
 
