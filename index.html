@@ -1,7 +1,22 @@
 ---
 layout: default
+testArray:
+- step: Test
+  kind: image
+- step: One
+  kind: javascript
+- step: Two
+  kind: video
+- step: Three
+  kind: audio
 ---
+<!-- Get a random value from the array: testArray
 
+{% if page.testArray %}
+  {% assign item = page.testArray | sample %}
+  <h1>{{ item.step }}</h1>
+{% endif %}
+-->
 <div class="cover flexbox-container">
   <div class="navbox">
     {% include icon-logo.html width="75" %}
@@ -29,16 +44,22 @@ layout: default
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-12">
+    <div class="col-xs-12">
       <h3>News</h3>
     </div>
   </div>
   <div class="row">
-    {% for post in site.posts %}
-     <div class="col-xs-12 col-sm-6 col-lg-4">
+    <!-- Show post with category "News" -->
+    {% for post in site.categories.news limit:3 %}
+     <div class="col-xs-12 col-sm-4">
        <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
        {{ post.excerpt }}
      </div>
     {% endfor %}
   </div><!--/row-->
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Eventi</h3>
+    </div>
+  </div>
 </div><!--/.container-->
