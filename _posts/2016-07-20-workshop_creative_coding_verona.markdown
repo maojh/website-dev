@@ -6,7 +6,7 @@ date:   2016-07-20 10:39:00 +0100
 # image:
 excerpt: "A settembre 2016 Codice Inutile terrà un workshop di Creative Coding a Verona utilizzando Processing. Il workshop è suddiviso in 3 moduli: Processing Base (3-4 settembre), Generative Art (10-11 settembre) e Data Visualization (17-18 settembre)"
 image: /images/posts/workshop_linos.jpg
-categories: workshop
+categories: workshop, news
 author: fedpep
 tags: ["Processing", "Workshop", "Verona"]
 ---
