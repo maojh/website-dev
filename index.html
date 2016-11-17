@@ -1,23 +1,20 @@
 ---
 layout: default
-testArray:
-- step: Test
-  kind: image
-- step: One
-  kind: javascript
-- step: Two
-  kind: video
-- step: Three
-  kind: audio
 ---
-<!-- Get a random value from the array: testArray
 
-{% if page.testArray %}
-  {% assign item = page.testArray | sample %}
-  <h1>{{ item.step }}</h1>
+{% if site.data.homepage %}
+  {% assign item = site.data.homepage | sample %}
 {% endif %}
--->
-<div class="cover flexbox-container">
+
+{% if item.includes %}
+  {% for inc in item.includes %}
+<script src="{{ inc.url }}" type="text/javascript"></script>
+  {% endfor %}
+  <script src="{{ site.url }}{{ item.href }}" type="text/javascript"></script>
+{% endif %}
+
+<div class="cover flexbox-container" id="myContainer">
+  <!--
   <div class="navbox">
     {% include icon-logo.html width="75" %}
     <ul class="center-nav">
@@ -28,18 +25,16 @@ testArray:
       <li><a href="#contact">Press</a></li>
     </ul>
   </div>
+-->
   <div class="title">
     <ul>
-      <li>Casaccio | <a href="#">Ignoto</a></li>
-      <li><i>Css 3, gradienti</i></li>
+      <li>{{ item.title }} | <a href="#">{{ item.author }}</a></li>
+      <li><i>{{ item.description }}</i></li>
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
     </ul>
-  </div>
-  <div class="down">
-    <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
   </div>
 </div>
 <div class="container">
