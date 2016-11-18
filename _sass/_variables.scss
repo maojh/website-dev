@@ -4,3 +4,77 @@
  * Before editing this file, please check how Twitter's Bootstrap handles variables
  * http://getbootstrap.com/css/
 */
+
+// FONTS
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+$inconsolata: 'Inconsolata', sans-serif;
+$monserrat: 'Montserrat', sans-serif;
+
+// COLORS
+
+$ultraWhite: #fff;
+$ultraBlack: #000;
+$white: darken($ultraWhite, 5%);
+$black: lighten($ultraBlack, 10%);
+
+// COLORS ANIMATION
+@-webkit-keyframes color-change{
+  0% {
+    fill: red;
+    color: red;
+  }
+  20% {
+    fill: orange;
+    color: orange;
+  }
+  40% {
+    fill: green;
+    color: green;
+  }
+  60% {
+    fill: blue;
+    color: blue;
+  }
+  80% {
+    fill: indigo;
+    color: indigo;
+  }
+  100% {
+    fill: violet;
+    color: violet;
+  }
+}
+@-webkit-keyframes background-change{
+  0% {
+    fill: red;
+    background: red;
+    color: #fff;
+  }
+  20% {
+    fill:orange;
+    background: orange;
+    color: #fff;
+  }
+  40% {
+    fill:green;
+    background: green;
+    color: #fff;
+  }
+  60% {
+    fill:blue;
+    background: blue;
+    color: #fff;
+  }
+  80% {
+    fill:indigo;
+    background: indigo;
+    color: #fff;
+  }
+  100% {
+    fill:violet;
+    background: violet;
+    color: #fff;
+  }
+}
