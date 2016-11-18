@@ -1,0 +1,28 @@
+---
+This is just dummy content for test purposes
+Inspired by: https://thornelabs.net/2014/06/08/a-better-way-to-display-random-jekyll-posts-on-page-load-or-refresh-using-jquery-and-json.html
+---
+[
+  {
+    "title": "Lavoro di Federico Pepe",
+    "author": "Federico Pepe",
+    "description": "Progetto di Federico",
+    "kind": "javascript",
+    "href": "/js/hero/federico.js",
+    "includes": [
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
+    ]
+  },
+  {
+    "title": "Lavoro di Alka",
+    "author": "Alka Cappellazzo",
+    "description": "La descrizione del progetto",
+    "kind": "javascript",
+    "includes": [
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
+    ],
+   "href": "/js/hero/alka.js"
+  }
+]

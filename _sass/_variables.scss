@@ -20,7 +20,7 @@ $white: darken($ultraWhite, 5%);
 $black: lighten($ultraBlack, 10%);
 
 // COLORS ANIMATION
-@-webkit-keyframes color-change{
+@keyframes color-change{
   0% {
     fill: red;
     color: red;
@@ -46,7 +46,7 @@ $black: lighten($ultraBlack, 10%);
     color: violet;
   }
 }
-@-webkit-keyframes background-change{
+@keyframes background-change{
   0% {
     fill: red;
     background: red;

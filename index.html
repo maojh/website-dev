@@ -1,42 +1,22 @@
 ---
 layout: default
 ---
-
-{% if site.data.homepage %}
-  {% assign item = site.data.homepage | sample %}
-{% endif %}
-
-{% if item.includes %}
-  {% for inc in item.includes %}
-<script src="{{ inc.url }}" type="text/javascript"></script>
-  {% endfor %}
-  <script src="{{ site.url }}{{ item.href }}" type="text/javascript"></script>
-{% endif %}
-
 <div class="cover flexbox-container" id="myContainer">
-  <!--
-  <div class="navbox">
-    {% include icon-logo.html width="75" %}
-    <ul class="center-nav">
-      <li class="active"><a href="#about">Eventi</a></li>
-      <li><a href="#contact">Progetti</a></li>
-      <li><a href="#contact">People</a></li>
-      <li><a href="#contact">About</a></li>
-      <li><a href="#contact">Press</a></li>
-    </ul>
+  <div id="loading" style="display: none">
+    <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
   </div>
--->
   <div class="title">
     <ul>
-      <li>{{ item.title }} | <a href="#">{{ item.author }}</a></li>
-      <li><i>{{ item.description }}</i></li>
+      <li class="item-title"></li>
+      <li class="item-description"></li>
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -58,3 +38,38 @@ layout: default
     </div>
   </div>
 </div><!--/.container-->
+
+<script>
+/*
+ * This script allows us to load new content dinamically every page load
+ * It loads the data from homepage.json.
+ * It currently works only with P5.js script.
+ * TODO:
+ * - add support for video, images and other things.
+ *
+*/
+function randomPost() {
+  $("canvas").remove();
+  $("#loading").show();
+  $.ajax({
+    url: "/homepage.json",
+    type: "GET",
+    dataType: "JSON",
+  })
+  .done(function(data) {
+    $("#loading").hide();
+    var randomIndex = Math.floor(Math.random() * data.length);
+    var item = data[randomIndex];
+    $.each(item.includes, function(){
+      $.getScript(this);
+    });
+    $.getScript(item.href);
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+    //alert(data[randomIndex].includes);
+  })
+}
+$(document).ready(function() {
+    randomPost();
+});
+</script>

@@ -33,6 +33,9 @@
   <meta name="google-site-verification" content="sXrZY76d0L9dLRhShowTHH7coc-wwVK-E2fE25A6Ibw" />
   <!-- END GOOGLE SITE VERIFICATION -->
 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <!-- Begin Jekyll SEO tag v1.3.3 -->
 <title>Codice Inutile - Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</title>
 <meta property="og:title" content="Codice Inutile" />
@@ -101,49 +104,22 @@
 
 
 
-    
-
-
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js" type="text/javascript"></script>
-  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js" type="text/javascript"></script>
-  
-  <script src="http://localhost:4000/js/hero/alka.js" type="text/javascript"></script>
-
-
-<div class="cover flexbox-container" id="myContainer">
-  <!--
-  <div class="navbox">
-    <a href="http://localhost:4000">
-  <svg viewBox="0 0 2100 2200" xml:space="preserve" width="75">
-  	<polygon class="scuro" points="1400,400 1400,500 700,500 400,500 400,800 400,900 700,900 700,800 1400,800 1400,1200 1700,1200 1700,400 	"/>
-  	<polygon class="scuro" points="700,1800 700,1700 1400,1700 1700,1700 1700,1400 1700,1300 1400,1300 1400,1400 700,1400 700,1000 400,1000
-  		400,1800 	"/>
-  </svg>
-
-</a>
-
-    <ul class="center-nav">
-      <li class="active"><a href="#about">Eventi</a></li>
-      <li><a href="#contact">Progetti</a></li>
-      <li><a href="#contact">People</a></li>
-      <li><a href="#contact">About</a></li>
-      <li><a href="#contact">Press</a></li>
-    </ul>
+    <div class="cover flexbox-container" id="myContainer">
+  <div id="loading" style="display: none">
+    <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
   </div>
--->
   <div class="title">
     <ul>
-      <li>Lorem | <a href="#">Alka Cappellazzo</a></li>
-      <li><i>Una descrizione</i></li>
+      <li class="item-title"></li>
+      <li class="item-description"></li>
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -182,6 +158,41 @@
   </div>
 </div><!--/.container-->
 
+<script>
+/*
+ * This script allows us to load new content dinamically every page load
+ * It loads the data from homepage.json.
+ * It currently works only with P5.js script.
+ * TODO:
+ * - add support for video, images and other things.
+ *
+*/
+function randomPost() {
+  $("canvas").remove();
+  $("#loading").show();
+  $.ajax({
+    url: "/homepage.json",
+    type: "GET",
+    dataType: "JSON",
+  })
+  .done(function(data) {
+    $("#loading").hide();
+    var randomIndex = Math.floor(Math.random() * data.length);
+    var item = data[randomIndex];
+    $.each(item.includes, function(){
+      $.getScript(this);
+    });
+    $.getScript(item.href);
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+    //alert(data[randomIndex].includes);
+  })
+}
+$(document).ready(function() {
+    randomPost();
+});
+</script>
+
 
 
     
@@ -195,7 +206,7 @@
               <a href="http://www.github.com/codiceinutile"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
             </li>
             <li>
-              <a href="http://www.facebook.com/http://www.facebook.com/codiceinutile"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+              <a href="http://www.facebook.com/codiceinutile"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
             </li>
             <li>
               <a href="http://www.twitter.com/codiceinutile"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
@@ -216,9 +227,7 @@
   ga('send', 'pageview');
   </script>
   <!-- END GOOGLE ANALYTICS -->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
 

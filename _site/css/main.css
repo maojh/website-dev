@@ -6008,7 +6008,7 @@ button.close {
  * Before editing this file, please check how Twitter's Bootstrap handles variables
  * http://getbootstrap.com/css/
 */
-@-webkit-keyframes color-change {
+@keyframes color-change {
   0% {
     fill: red;
     color: red; }
@@ -6027,7 +6027,7 @@ button.close {
   100% {
     fill: violet;
     color: violet; } }
-@-webkit-keyframes background-change {
+@keyframes background-change {
   0% {
     fill: red;
     background: red;
@@ -6080,8 +6080,7 @@ body {
     animation: color-change 30s infinite !important; }
   body .cover {
     background: #225faa;
-    background: linear-gradient(135deg, #222 0%, #555555 100%);
-    margin: 0 1em; }
+    background: linear-gradient(135deg, #222 0%, #555555 100%); }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Montserrat", sans-serif;
     line-height: 1.7em; }
