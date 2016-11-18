@@ -8,7 +8,7 @@ Inspired by: https://thornelabs.net/2014/06/08/a-better-way-to-display-random-je
     "author": "Federico Pepe",
     "description": "Progetto di Federico",
     "kind": "javascript",
-    "href": "/js/hero/federico.js",
+    "href": "{{ site.url }}/js/hero/federico.js",
     "includes": [
       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
@@ -23,6 +23,6 @@ Inspired by: https://thornelabs.net/2014/06/08/a-better-way-to-display-random-je
       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
     ],
-   "href": "/js/hero/alka.js"
+   "href": "{{ site.url }}/js/hero/alka.js"
   }
 ]
