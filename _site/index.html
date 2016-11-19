@@ -33,6 +33,9 @@
   <meta name="google-site-verification" content="sXrZY76d0L9dLRhShowTHH7coc-wwVK-E2fE25A6Ibw" />
   <!-- END GOOGLE SITE VERIFICATION -->
 
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <!-- Begin Jekyll SEO tag v1.3.3 -->
 <title>Codice Inutile - Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</title>
 <meta property="og:title" content="Codice Inutile" />
@@ -64,92 +67,153 @@
   <body>
 
     <header>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Codice Inutile</a>
+    </div>
 
-  <nav class="navbar navbar-fixed-top hide">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">CODICE INUTILE ♥</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse right">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">Eventi</a></li>
-            <li><a href="#contact">Progetti</a></li>
-            <li><a href="#contact">People</a></li>
-            <li><a href="#contact">About</a></li>
-            <li><a href="#contact">Press</a></li>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Ricerca</a></li>
+        <li><a href="#">Formazione</a></li>
+        <li><a href="#">Progetti</a></li>
+        <li><a href="#">Persone</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chi siamo <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Manifesto</a></li>
+            <li><a href="#">Meetup</a></li>
           </ul>
-        </div><!-- /.nav-collapse -->
-      </div><!-- /.container -->
-    </nav><!-- /.navbar -->
-
+        </li>
+        <li><a href="#">Contattaci</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
 </header>
 
 
 
-    <div class="cover flexbox-container">
-  <div class="navbox">
-    <a href="http://localhost:4000">
-  <svg viewBox="0 0 2100 2200" xml:space="preserve" width="75">
-  	<polygon class="scuro" points="1400,400 1400,500 700,500 400,500 400,800 400,900 700,900 700,800 1400,800 1400,1200 1700,1200 1700,400 	"/>
-  	<polygon class="scuro" points="700,1800 700,1700 1400,1700 1700,1700 1700,1400 1700,1300 1400,1300 1400,1400 700,1400 700,1000 400,1000
-  		400,1800 	"/>
-  </svg>
-
-</a>
-
-    <ul class="center-nav">
-      <li class="active"><a href="#about">Eventi</a></li>
-      <li><a href="#contact">Progetti</a></li>
-      <li><a href="#contact">People</a></li>
-      <li><a href="#contact">About</a></li>
-      <li><a href="#contact">Press</a></li>
-    </ul>
+    <div class="cover flexbox-container" id="myContainer">
+  <div id="loading" style="display: none">
+    <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
   </div>
   <div class="title">
     <ul>
-      <li>Casaccio | <a href="#">Ignoto</a></li>
-      <li><i>Css 3, gradienti</i></li>
+      <li class="item-title"></li>
+      <li class="item-description"></li>
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
     </ul>
   </div>
-  <div class="down">
-    <i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
-  </div>
 </div>
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-12">
-       <div class="row">
-         <h3>News</h3>
-        
-         <div class="col-xs-12 col-sm-6 col-lg-4">
-           <h2><a class="post-link" href="/workshop/2016/07/20/workshop_creative_coding_verona.html">Workshop Creative Coding a settembre (Verona)</a></h2>
-           A settembre 2016 Codice Inutile terrà un workshop di Creative Coding a Verona utilizzando Processing. Il workshop è suddiviso in 3 moduli: Processing Base (3-4 settembre), Generative Art (10-11 settembre) e Data Visualization (17-18 settembre)
-         </div>
-        
-      </div><!--/row-->
-    </div><!--/.col-xs-12.col-sm-9-->
-    <div class="sidebar-offcanvas hide" id="sidebar">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">GitHub</a>
-        <a href="#" class="list-group-item">Facebook</a>
-        <a href="#" class="list-group-item">Twitter</a>
-        <a href="#" class="list-group-item">Newsletter</a>
-        <a href="logoCi.html" class="list-group-item">logoCi</a>
-      </div>
-    </div><!--/.sidebar-offcanvas-->
-  </div> <!--/row-->
+    <div class="col-xs-12">
+      <h3>News</h3>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Show post with category "News" -->
+    
+     <div class="col-xs-12 col-sm-4">
+       <h2><a class="post-link" href="/news/2016/09/21/lorem_ipsum.html">Lorem Ipsum 3</a></h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae turpis nisl. Donec pretium eros sapien, non dictum odio rutrum at. Nam dolor ante, viverra et mauris ut, venenatis fermentum lorem. Donec eu ultrices elit, id mollis nibh. Nunc nec elit nec dolor viverra bibendum vel nec dui. In feugiat in neque nec aliquet. Fusce fermentum efficitur pretium.</p>
+
+
+     </div>
+    
+     <div class="col-xs-12 col-sm-4">
+       <h2><a class="post-link" href="/news/2016/09/20/lorem_ipsum.html">Lorem Ipsum 2</a></h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae turpis nisl. Donec pretium eros sapien, non dictum odio rutrum at. Nam dolor ante, viverra et mauris ut, venenatis fermentum lorem. Donec eu ultrices elit, id mollis nibh. Nunc nec elit nec dolor viverra bibendum vel nec dui. In feugiat in neque nec aliquet. Fusce fermentum efficitur pretium.</p>
+
+
+     </div>
+    
+     <div class="col-xs-12 col-sm-4">
+       <h2><a class="post-link" href="/news/2016/08/20/lorem_ipsum.html">Lorem Ipsum</a></h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae turpis nisl. Donec pretium eros sapien, non dictum odio rutrum at. Nam dolor ante, viverra et mauris ut, venenatis fermentum lorem. Donec eu ultrices elit, id mollis nibh. Nunc nec elit nec dolor viverra bibendum vel nec dui. In feugiat in neque nec aliquet. Fusce fermentum efficitur pretium.</p>
+
+
+     </div>
+    
+  </div><!--/row-->
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Eventi</h3>
+    </div>
+  </div>
 </div><!--/.container-->
+
+<script>
+/*
+ * This script allows us to load new content dinamically every page load
+ * It loads the data from homepage.json.
+ * It currently works only with P5.js script.
+ * TODO:
+ * - add support for video, images and other things.
+ *
+*/
+function randomPost() {
+  $("canvas").remove();
+  $("#loading").show();
+  $.ajax({
+    url: "http://localhost:4000/homepage.json",
+    type: "GET",
+    dataType: "JSON",
+  })
+  .done(function(data) {
+    $("#loading").hide();
+    var randomIndex = Math.floor(Math.random() * data.length);
+    var item = data[randomIndex];
+    $.each(item.includes, function(){
+      $.getScript(this);
+    });
+    $.getScript(item.href);
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+    //alert(data[randomIndex].includes);
+  })
+}
+$(document).ready(function() {
+    randomPost();
+});
+</script>
 
 
 
     
 <footer class="site-footer">
   <div class="container">
-     <small>&copy; 2016 Codice Inutile ♥ è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</small>
+    <div class="row">
+      <div class="col-xs-12">
+        <p><small>&copy; 2016 Codice Inutile &hearts; è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</small></p>
+        <ul class="social text-center">
+            <li>
+              <a href="http://www.github.com/codiceinutile"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com/codiceinutile"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/codiceinutile"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            </li>
+          </ul>
+      </div>
+    </div>
   </div>
 
   <!-- GOOGLE ANALYTICS -->
@@ -163,11 +227,29 @@
   ga('send', 'pageview');
   </script>
   <!-- END GOOGLE ANALYTICS -->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Show navbar on scroll -->
+  <script>
+  $(document).ready(function(){
+    // hide .navbar first
+    $(".navbar").hide();
+
+    // fade in .navbar
+    $(function () {
+      $(window).scroll(function () {
+        // set distance user needs to scroll before we start fadeIn
+        if ($(this).scrollTop() > 100) {
+          $('.navbar').fadeIn();
+        } else {
+          $('.navbar').fadeOut();
+        }
+        });
+    });
+  });
+  </script>
 
 </footer>
 

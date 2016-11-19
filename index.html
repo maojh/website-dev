@@ -1,71 +1,75 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @cybermarinella
- Watch 1
-  Star 0
- Fork 2 codiceinutile/website-dev
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathwebsite-dev/index.html
-6e59708  36 minutes ago
-@federico-pepe federico-pepe Pushing Marinella's code
-1 contributor
-RawBlameHistory     
-54 lines (52 sloc)  1.72 KB
 ---
 layout: default
 ---
-
-<div class="cover flexbox-container">
-  <div class="navbox">
-    {% include icon-logo.html width="75" %}
-    <ul class="center-nav">
-      <li class="active"><a href="#about">Eventi</a></li>
-      <li><a href="#contact">Progetti</a></li>
-      <li><a href="#contact">People</a></li>
-      <li><a href="#contact">About</a></li>
-      <li><a href="#contact">Press</a></li>
-    </ul>
+<div class="cover flexbox-container" id="myContainer">
+  <div id="loading" style="display: none">
+    <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
   </div>
   <div class="title">
     <ul>
-      <li>Casaccio | <a href="#">Ignoto</a></li>
-      <li><i>Css 3, gradienti</i></li>
+      <li class="item-title"></li>
+      <li class="item-description"></li>
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 </div>
+
 <div class="container">
   <div class="row">
-    <div class="col-xs-12 col-sm-12">
-       <div class="row">
-         <h3>News</h3>
-        {% for post in site.posts %}
-         <div class="col-xs-12 col-sm-6 col-lg-4">
-           <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-           {{ post.excerpt }}
-         </div>
-        {% endfor %}
-      </div><!--/row-->
-    </div><!--/.col-xs-12.col-sm-9-->
-    <div class="sidebar-offcanvas hide" id="sidebar">
-      <div class="list-group">
-        <a href="#" class="list-group-item active">GitHub</a>
-        <a href="#" class="list-group-item">Facebook</a>
-        <a href="#" class="list-group-item">Twitter</a>
-        <a href="#" class="list-group-item">Newsletter</a>
-        <a href="logoCi.html" class="list-group-item">logoCi</a>
-      </div>
-    </div><!--/.sidebar-offcanvas-->
-  </div> <!--/row-->
+    <div class="col-xs-12">
+      <h3>News</h3>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Show post with category "News" -->
+    {% for post in site.categories.news limit:3 %}
+     <div class="col-xs-12 col-sm-4">
+       <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+       {{ post.excerpt }}
+     </div>
+    {% endfor %}
+  </div><!--/row-->
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>Eventi</h3>
+    </div>
+  </div>
 </div><!--/.container-->
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
 
-http://
+<script>
+/*
+ * This script allows us to load new content dinamically every page load
+ * It loads the data from homepage.json.
+ * It currently works only with P5.js script.
+ * TODO:
+ * - add support for video, images and other things.
+ *
+*/
+function randomPost() {
+  $("canvas").remove();
+  $("#loading").show();
+  $.ajax({
+    url: "{{ site.url }}/homepage.json",
+    type: "GET",
+    dataType: "JSON",
+  })
+  .done(function(data) {
+    $("#loading").hide();
+    var randomIndex = Math.floor(Math.random() * data.length);
+    var item = data[randomIndex];
+    $.each(item.includes, function(){
+      $.getScript(this);
+    });
+    $.getScript(item.href);
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+    //alert(data[randomIndex].includes);
+  })
+}
+$(document).ready(function() {
+    randomPost();
+});
+</script>
