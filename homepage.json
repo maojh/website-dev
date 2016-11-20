@@ -6,7 +6,7 @@ Inspired by: https://thornelabs.net/2014/06/08/a-better-way-to-display-random-je
   {
     "title": "Lavoro di Federico Pepe",
     "author": "Federico Pepe",
-    "description": "Progetto di Federico",
+    "description": "javascript, Processing",
     "kind": "javascript",
     "href": "{{ site.url }}/js/hero/federico.js",
     "includes": [
@@ -17,7 +17,7 @@ Inspired by: https://thornelabs.net/2014/06/08/a-better-way-to-display-random-je
   {
     "title": "Lavoro di Alka",
     "author": "Alka Cappellazzo",
-    "description": "La descrizione del progetto",
+    "description": "Processing",
     "kind": "javascript",
     "includes": [
       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",

@@ -68,7 +68,7 @@
 
     <header>
   <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -109,13 +109,24 @@
     <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
   </div>
   <div class="title">
+    <a href="http://localhost:4000">
+  <svg viewBox="0 0 2100 2200" xml:space="preserve" width="6em">
+  	<polygon class="scuro" points="1400,400 1400,500 700,500 400,500 400,800 400,900 700,900 700,800 1400,800 1400,1200 1700,1200 1700,400 	"/>
+  	<polygon class="scuro" points="700,1800 700,1700 1400,1700 1700,1700 1700,1400 1700,1300 1400,1300 1400,1400 700,1400 700,1000 400,1000
+  		400,1800 	"/>
+  </svg>
+
+</a>
+
     <ul>
       <li class="item-title"></li>
       <li class="item-description"></li>
+      <li class="item-level"><i>livello minimo</i></li>
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
       <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 </div>
@@ -123,7 +134,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h3>News</h3>
+      <h5>News</h5>
     </div>
   </div>
   <div class="row">
