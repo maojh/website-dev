@@ -12,28 +12,26 @@ header {
 
 body {
     font-family: $inconsolata;
-    background: white;
+    background: $white;
     color: $black;
     height: 100%;
-    a:hover, h1, .active, a, a:visited, svg * {
+    font-size: 16px;
+    a:hover, h1, .active, a, a:visited, svg *, .title {
       -webkit-animation: color-change 30s infinite !important;
       -moz-animation: color-change 30s infinite !important;
       -o-animation: color-change 30s infinite !important;
       -ms-animation: color-change 30s infinite !important;
       animation: color-change 30s infinite !important;
-    }
-    .cover{
-      background: #225faa;
-      background: linear-gradient(135deg, #222 0%,complement(#555) 100%);
+      font-weight: 100 !important;
     }
 
     h1, h2, h3, h4, h5, h6{
         font-family: $monserrat;
         line-height: 1.7em;
     }
-    img.logo {
-        margin:0 auto 20px;
 
+    .row{
+      padding: 3em 0;
     }
     footer{
         ul.social {
@@ -62,6 +60,7 @@ body {
   height: 100%;
   padding: 0;
   text-align: center;
+  display: block;
   }
 .title {
   background: $black;
@@ -69,21 +68,22 @@ body {
   right: 1em;
   bottom: 0;
   text-align: left;
-}
-.title ul {
+  &:hover{
+    font-size: 31px;
+  }
+
+  ul {
   list-style: none;
   padding: 0;
   float: left;
-  margin: 1em;
-  color: white; }
-.navbox {
-  margin: auto; }
-.logo {
-  width: 200px;
-  margin-top: -8em; }
-.center-nav {
-  margin: 0;
-  padding: 0; }
-.center-nav li {
-  display: inline;
-  margin: 0 1em; }
+  margin: 1em 0 1em 1em;
+    li{
+      font-weight: lighter;
+    }
+  }
+
+  svg{
+   margin-top: -0.3em;
+  }
+
+}
