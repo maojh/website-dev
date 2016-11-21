@@ -55,7 +55,7 @@ function randomPost() {
   $("canvas").remove();
   $("#loading").show();
   $.ajax({
-    url: "{{ site.url }}homepage.json",
+    url: "{{ site.url }}/homepage.json",
     type: "GET",
     dataType: "JSON",
   })
