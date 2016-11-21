@@ -64,9 +64,11 @@ function randomPost() {
     var randomIndex = Math.floor(Math.random() * data.length);
     var item = data[randomIndex];
     $.each(item.includes, function(){
-      $.getScript(this);
+      $.getScript(this)
+        .done(console.log(this + " loaded"));
     });
-    $.getScript(item.href);
+    $.getScript(item.href)
+      .done(console.log(item.href + " loaded"));
     $(".item-title").html(item.title + ' | ' + item.author);
     $(".item-description").html(item.description);
     //alert(data[randomIndex].includes);
