@@ -1,5 +1,4 @@
 function setup() {
-  clear();
   var myCanvas = createCanvas(windowWidth, windowHeight);
   myCanvas.parent('myContainer');
   background(255);
