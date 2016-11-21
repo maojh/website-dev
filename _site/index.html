@@ -36,7 +36,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v1.3.3 -->
 <title>Codice Inutile - Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</title>
 <meta property="og:title" content="Codice Inutile" />
 <meta name="description" content="Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice." />
@@ -238,7 +238,7 @@ $(document).ready(function() {
   ga('send', 'pageview');
   </script>
   <!-- END GOOGLE ANALYTICS -->
-  
+
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
 
@@ -246,16 +246,16 @@ $(document).ready(function() {
   <script>
   $(document).ready(function(){
     // hide .navbar first
-    $(".navbar").hide();
+    $(".navbar").css("opacity","0")
 
     // fade in .navbar
     $(function () {
       $(window).scroll(function () {
         // set distance user needs to scroll before we start fadeIn
         if ($(this).scrollTop() > 100) {
-          $('.navbar').fadeIn();
+          $(".navbar").css("opacity","1");
         } else {
-          $('.navbar').fadeOut();
+          $(".navbar").css("opacity","0");
         }
         });
     });

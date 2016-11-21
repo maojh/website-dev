@@ -5,8 +5,8 @@
     <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Nov 2016 14:18:41 +0000</pubDate>
-    <lastBuildDate>Sun, 20 Nov 2016 14:18:41 +0000</lastBuildDate>
+    <pubDate>Mon, 21 Nov 2016 19:59:18 +0100</pubDate>
+    <lastBuildDate>Mon, 21 Nov 2016 19:59:18 +0100</lastBuildDate>
     <generator>Jekyll v3.3.0</generator>
     
       <item>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;Curabitur at nulla euismod, facilisis ligula ac, varius neque. Pellentesque dui nulla, mollis eu urna sit amet, feugiat dictum erat. Cras id ex vitae urna vulputate dictum. Donec nisi orci, imperdiet ullamcorper dolor eu, sollicitudin mattis erat. Morbi urna nibh, scelerisque et neque quis, consequat mattis metus. Phasellus arcu sem, scelerisque at est a, elementum gravida erat. Etiam finibus arcu ipsum, sed aliquet magna venenatis sed. Nullam quam dolor, porta eget sodales at, aliquet at justo.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 21 Sep 2016 10:39:00 +0100</pubDate>
+        <pubDate>Wed, 21 Sep 2016 11:39:00 +0200</pubDate>
         <link>http://localhost:4000/news/2016/09/21/lorem_ipsum.html</link>
         <guid isPermaLink="true">http://localhost:4000/news/2016/09/21/lorem_ipsum.html</guid>
         
@@ -42,7 +42,7 @@
 
 &lt;p&gt;Curabitur at nulla euismod, facilisis ligula ac, varius neque. Pellentesque dui nulla, mollis eu urna sit amet, feugiat dictum erat. Cras id ex vitae urna vulputate dictum. Donec nisi orci, imperdiet ullamcorper dolor eu, sollicitudin mattis erat. Morbi urna nibh, scelerisque et neque quis, consequat mattis metus. Phasellus arcu sem, scelerisque at est a, elementum gravida erat. Etiam finibus arcu ipsum, sed aliquet magna venenatis sed. Nullam quam dolor, porta eget sodales at, aliquet at justo.&lt;/p&gt;
 </description>
-        <pubDate>Tue, 20 Sep 2016 10:39:00 +0100</pubDate>
+        <pubDate>Tue, 20 Sep 2016 11:39:00 +0200</pubDate>
         <link>http://localhost:4000/news/2016/09/20/lorem_ipsum.html</link>
         <guid isPermaLink="true">http://localhost:4000/news/2016/09/20/lorem_ipsum.html</guid>
         
@@ -63,7 +63,7 @@
 
 &lt;p&gt;Curabitur at nulla euismod, facilisis ligula ac, varius neque. Pellentesque dui nulla, mollis eu urna sit amet, feugiat dictum erat. Cras id ex vitae urna vulputate dictum. Donec nisi orci, imperdiet ullamcorper dolor eu, sollicitudin mattis erat. Morbi urna nibh, scelerisque et neque quis, consequat mattis metus. Phasellus arcu sem, scelerisque at est a, elementum gravida erat. Etiam finibus arcu ipsum, sed aliquet magna venenatis sed. Nullam quam dolor, porta eget sodales at, aliquet at justo.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 20 Aug 2016 10:39:00 +0100</pubDate>
+        <pubDate>Sat, 20 Aug 2016 11:39:00 +0200</pubDate>
         <link>http://localhost:4000/news/2016/08/20/lorem_ipsum.html</link>
         <guid isPermaLink="true">http://localhost:4000/news/2016/08/20/lorem_ipsum.html</guid>
         
@@ -141,7 +141,7 @@
 &lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.jpg&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 Jul 2016 10:39:00 +0100</pubDate>
+        <pubDate>Wed, 20 Jul 2016 11:39:00 +0200</pubDate>
         <link>http://localhost:4000/workshop/news/2016/07/20/workshop_creative_coding_verona.html</link>
         <guid isPermaLink="true">http://localhost:4000/workshop/news/2016/07/20/workshop_creative_coding_verona.html</guid>
         
