@@ -89,6 +89,8 @@ function randomPost() {
 }
 $(document).ready(function() {
     randomPost();
-    $.getMultiScripts(jsArray);
+    $.getMultiScripts(jsArray).done(
+      console.log("Everything should be loaded properly now");
+    );
 });
 </script>
