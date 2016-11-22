@@ -178,6 +178,20 @@
  * - add support for video, images and other things.
  *
 */
+var jsArray = [];
+
+$.getMultiScripts = function(arr) {
+  var _arr = $.map(arr, function(scr) {
+      return $.getScript(scr);
+  });
+
+  _arr.push($.Deferred(function( deferred ){
+      $( deferred.resolve );
+  }));
+
+  return $.when.apply($, _arr);
+}
+
 function randomPost() {
   $("canvas").remove();
   $("#loading").show();
@@ -191,18 +205,14 @@ function randomPost() {
     $("#loading").hide();
     var randomIndex = Math.floor(Math.random() * data.length);
     var item = data[randomIndex];
-    $.when(
-      $.each(item.includes, function(){
-        $.getScript(this)
-      }),
-      $.Deferred(function( deferred ){
-        $( deferred.resolve );
-      })
-    ).done(function(){
-      $.getScript(item.href);
-      $(".item-title").html(item.title + ' | ' + item.author);
-      $(".item-description").html(item.description);
+    $.each(item.includes, function(index, value) {
+      jsArray.push(value);
     });
+    jsArray.push(item.href);
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+    //alert(data[randomIndex].includes);
+    $.getMultiScripts(jsArray).done();
   })
 }
 $(document).ready(function() {
