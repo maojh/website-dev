@@ -55,7 +55,7 @@ var jsArray = [];
 
 $.getMultiScripts = function(arr) {
   var _arr = $.map(arr, function(scr) {
-      return $.getScript(scr);
+      return $.getScript(scr).done();
   });
 
   _arr.push($.Deferred(function( deferred ){
@@ -85,10 +85,10 @@ function randomPost() {
     $(".item-title").html(item.title + ' | ' + item.author);
     $(".item-description").html(item.description);
     //alert(data[randomIndex].includes);
-    $.getMultiScripts(jsArray).done();
   })
 }
 $(document).ready(function() {
     randomPost();
+    $.getMultiScripts(jsArray).done();
 });
 </script>
