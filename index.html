@@ -83,6 +83,7 @@ function deferredLoading() {
   $.get("{{ site.url }}/homepage.json", function() {
   })
   .done(function(data){
+
     var item = data[Math.floor(Math.random() * data.length)];
     for(i in item.includes) {
       dfd.done($.get(item.includes[i]).done());

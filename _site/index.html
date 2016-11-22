@@ -210,6 +210,7 @@ function deferredLoading() {
   $.get("http://localhost:4000/homepage.json", function() {
   })
   .done(function(data){
+
     var item = data[Math.floor(Math.random() * data.length)];
     for(i in item.includes) {
       dfd.done($.get(item.includes[i]).done());
