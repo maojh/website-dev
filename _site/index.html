@@ -180,18 +180,6 @@
 */
 var jsArray = [];
 
-$.getMultiScripts = function(arr) {
-  var _arr = $.map(arr, function(scr) {
-      return $.getScript(scr);
-  });
-
-  _arr.push($.Deferred(function( deferred ){
-      $( deferred.resolve );
-  }));
-
-  return $.when.apply($, _arr);
-}
-
 function randomPost() {
   $("canvas").remove();
   $("#loading").show();
@@ -212,13 +200,28 @@ function randomPost() {
     $(".item-title").html(item.title + ' | ' + item.author);
     $(".item-description").html(item.description);
     //alert(data[randomIndex].includes);
-  })
+    loadScript();
+  });
+
 }
+function loadScript(){
+    var deferred = new $.Deferred();
+    var promise = deferred.promise();
+    $.each(jsArray, function(index, value) {
+      promise.then(function() {
+        return $.getScript(value).done()
+      })
+    });
+    promise.done(function() {
+      console.log("Done!");
+    });
+
+    deferred.resolve();
+}
+
+
 $(document).ready(function() {
     randomPost();
-    $.getMultiScripts(jsArray).done(
-      console.log("Everything should be loaded properly now")
-    );
 });
 </script>
 
