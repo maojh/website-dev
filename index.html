@@ -52,10 +52,11 @@ layout: default
  *
 */
 function randomPost() {
-  console.log("randomPost has been called");
+
   $("canvas").remove();
   $("#loading").show();
   $.ajax({
+    cache:true,
     url: "{{ site.url }}/homepage.json",
     type: "GET",
     dataType: "JSON",
@@ -75,6 +76,7 @@ function randomPost() {
     //alert(data[randomIndex].includes);
   })
 }
+
 $(document).ready(function() {
     randomPost();
 });

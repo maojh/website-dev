@@ -179,10 +179,11 @@
  *
 */
 function randomPost() {
-  console.log("randomPost has been called");
+
   $("canvas").remove();
   $("#loading").show();
   $.ajax({
+    cache:true,
     url: "http://localhost:4000/homepage.json",
     type: "GET",
     dataType: "JSON",
@@ -202,6 +203,7 @@ function randomPost() {
     //alert(data[randomIndex].includes);
   })
 }
+
 $(document).ready(function() {
     randomPost();
 });

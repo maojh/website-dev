@@ -6,9 +6,4 @@ function setup() {
     fill(random(255), random(255));
     rect(random(width), random(height), 50, 50);
   }
-
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
