@@ -51,12 +51,10 @@ layout: default
  * - add support for video, images and other things.
  *
 */
-var jsArray = [];
-
 function randomPost() {
+  console.log("randomPost has been called");
   $("canvas").remove();
   $("#loading").show();
-
   $.ajax({
     url: "{{ site.url }}/homepage.json",
     type: "GET",
@@ -66,33 +64,17 @@ function randomPost() {
     $("#loading").hide();
     var randomIndex = Math.floor(Math.random() * data.length);
     var item = data[randomIndex];
-    $.each(item.includes, function(index, value) {
-      jsArray.push(value);
+    $.each(item.includes, function(index, value){
+      $.getScript(value)
+        .done(console.log(value + " loaded"));
     });
-    jsArray.push(item.href);
+    $.getScript(item.href)
+      .done(console.log(item.href + " loaded"));
     $(".item-title").html(item.title + ' | ' + item.author);
     $(".item-description").html(item.description);
     //alert(data[randomIndex].includes);
-    loadScript();
-  });
-
+  })
 }
-function loadScript(){
-    var deferred = new $.Deferred();
-    var promise = deferred.promise();
-    $.each(jsArray, function(index, value) {
-      promise.then(function() {
-        return $.getScript(value).done()
-      })
-    });
-    promise.done(function() {
-      console.log("Done!");
-    });
-
-    deferred.resolve();
-}
-
-
 $(document).ready(function() {
     randomPost();
 });
