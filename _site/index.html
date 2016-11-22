@@ -182,7 +182,7 @@ var jsArray = [];
 
 $.getMultiScripts = function(arr) {
   var _arr = $.map(arr, function(scr) {
-      return $.getScript(scr).done();
+      return $.getScript(scr);
   });
 
   _arr.push($.Deferred(function( deferred ){
@@ -216,7 +216,7 @@ function randomPost() {
 }
 $(document).ready(function() {
     randomPost();
-    $.getMultiScripts(jsArray).done();
+    $.getMultiScripts(jsArray);
 });
 </script>
 
