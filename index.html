@@ -52,19 +52,14 @@ layout: default
  *
 */
 function randomPost() {
-
   $("canvas").remove();
   $("#loading").show();
-  $.ajax({
-    cache:true,
-    url: "{{ site.url }}/homepage.json",
-    type: "GET",
-    dataType: "JSON",
+  $.get("{{ site.url }}/homepage.json", function() {
   })
   .done(function(data) {
     $("#loading").hide();
-    var randomIndex = Math.floor(Math.random() * data.length);
-    var item = data[randomIndex];
+    // Get a random item from the array
+    var item = data[Math.floor(Math.random() * data.length)];
     $.each(item.includes, function(index, value){
       $.getScript(value)
         .done(console.log(value + " loaded"));
