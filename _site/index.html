@@ -178,6 +178,7 @@
  * - add support for video, images and other things.
  *
 */
+// FUNZIONE ORIGINALE
 function randomPost() {
   $("canvas").remove();
   $("#loading").show();
@@ -198,9 +199,34 @@ function randomPost() {
     //alert(data[randomIndex].includes);
   })
 }
+// TEST con Deferred Object
+function deferredLoading() {
+
+  var dfd = $.Deferred();
+
+  $.get("http://localhost:4000/homepage.json", function() {
+  })
+  .done(function(data){
+    var item = data[Math.floor(Math.random() * data.length)];
+    for(i in item.includes) {
+      dfd.done($.get(item.includes[i]).done());
+    }
+
+    $.when(dfd).done(
+      $.get(item.href)
+    )
+
+    dfd.resolve();
+
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+
+  })
+}
 
 $(document).ready(function() {
-    randomPost();
+    //randomPost();
+    deferredLoading();
 });
 </script>
 
