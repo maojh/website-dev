@@ -75,6 +75,9 @@ function randomPost() {
 // TEST con Deferred Object
 function deferredLoading() {
 
+  $("canvas").remove();
+  $("#loading").show();
+
   var dfd = $.Deferred();
 
   $.get("{{ site.url }}/homepage.json", function() {
@@ -86,7 +89,9 @@ function deferredLoading() {
     }
 
     $.when(dfd).done(
-      $.get(item.href)
+      $.get(item.href).done(
+        $("#loading").hide()
+      )
     )
 
     dfd.resolve();
