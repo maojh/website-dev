@@ -179,9 +179,9 @@
  *
 */
 function randomPost() {
-  console.log("randomPost has been called");
   $("canvas").remove();
   $("#loading").show();
+
   $.ajax({
     url: "http://localhost:4000/homepage.json",
     type: "GET",
@@ -191,15 +191,18 @@ function randomPost() {
     $("#loading").hide();
     var randomIndex = Math.floor(Math.random() * data.length);
     var item = data[randomIndex];
-    $.each(item.includes, function(){
-      $.getScript(this)
-        .done(console.log(this + " loaded"));
+    $.when(
+      $.each(item.includes, function(){
+        $.getScript(this)
+      }),
+      $.Deferred(function( deferred ){
+        $( deferred.resolve );
+      })
+    ).done(function(){
+      $.getScript(item.href);
+      $(".item-title").html(item.title + ' | ' + item.author);
+      $(".item-description").html(item.description);
     });
-    $.getScript(item.href)
-      .done(console.log(item.href + " loaded"));
-    $(".item-title").html(item.title + ' | ' + item.author);
-    $(".item-description").html(item.description);
-    //alert(data[randomIndex].includes);
   })
 }
 $(document).ready(function() {
