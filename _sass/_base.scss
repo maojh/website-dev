@@ -25,7 +25,7 @@ body {
     }
 
     .fullHeight{
-      padding: 3em 0;
+      padding: 7em 0;
     }
     footer{
         ul.social {
@@ -40,6 +40,9 @@ body {
     }
 }
 /*SPECIALS*/
+html, body{
+  height: 100%; //fullHeight
+}
 .navbar-collapse{
   margin-top: 1em;
 }

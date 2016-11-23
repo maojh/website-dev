@@ -6081,7 +6081,7 @@ body {
     font-family: "Montserrat", sans-serif;
     line-height: 1.2em; }
   body .fullHeight {
-    padding: 3em 0; }
+    padding: 7em 0; }
   body footer {
     margin-bottom: 3em; }
     body footer ul.social {
@@ -6092,6 +6092,9 @@ body {
         margin: 0 1em; }
 
 /*SPECIALS*/
+html, body {
+  height: 100%; }
+
 .navbar-collapse {
   margin-top: 1em; }
 
