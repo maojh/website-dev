@@ -21,10 +21,10 @@ body {
 
     h1, h2, h3, h4, h5, h6{
         font-family: $monserrat;
-        line-height: 1.7em;
+        line-height: 1.2em;
     }
 
-    .row{
+    .fullHeight{
       padding: 3em 0;
     }
     footer{
@@ -40,6 +40,9 @@ body {
     }
 }
 /*SPECIALS*/
+.navbar-collapse{
+  margin-top: 1em;
+}
 .miniNav{
   li{
     margin-right: 1em;
@@ -69,7 +72,7 @@ body {
   padding: 0;
   text-align: center;
   display: block;
-  }
+}
 .title {
   background: $black;
   position: absolute;
