@@ -4,12 +4,6 @@
  *
 */
 
-header {
-  .navbar-nav {
-    text-transform: uppercase;
-  }
-}
-
 body {
     font-family: $inconsolata;
     background: $white;
@@ -46,6 +40,20 @@ body {
     }
 }
 /*SPECIALS*/
+.miniNav{
+  li{
+    margin-right: 1em;
+    ul{
+      opacity:0;
+    }
+    &:hover{
+      ul{
+        opacity:1;
+      }
+    }
+  }
+}
+
 .flexbox-container {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -87,3 +95,4 @@ body {
   }
 
 }
+

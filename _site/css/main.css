@@ -6064,9 +6064,6 @@ button.close {
  * Extra small devices (phones, less than 768px)
  *
 */
-header .navbar-nav {
-  text-transform: uppercase; }
-
 body {
   font-family: "Inconsolata", sans-serif;
   background: #f2f2f2;
@@ -6095,6 +6092,13 @@ body {
         margin: 0 1em; }
 
 /*SPECIALS*/
+.miniNav li {
+  margin-right: 1em; }
+  .miniNav li ul {
+    opacity: 0; }
+  .miniNav li:hover ul {
+    opacity: 1; }
+
 .flexbox-container {
   display: -ms-flexbox;
   display: -webkit-flex;
