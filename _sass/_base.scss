@@ -4,12 +4,6 @@
  *
 */
 
-header {
-  .navbar-nav {
-    text-transform: uppercase;
-  }
-}
-
 body {
     font-family: $inconsolata;
     background: $white;
@@ -27,11 +21,11 @@ body {
 
     h1, h2, h3, h4, h5, h6{
         font-family: $monserrat;
-        line-height: 1.7em;
+        line-height: 1.2em;
     }
 
-    .row{
-      padding: 3em 0;
+    .fullHeight{
+      padding: 7em 0;
     }
     footer{
         ul.social {
@@ -46,6 +40,26 @@ body {
     }
 }
 /*SPECIALS*/
+html, body{
+  height: 100%; //fullHeight
+}
+.navbar-collapse{
+  margin-top: 1em;
+}
+.miniNav{
+  li{
+    margin-right: 1em;
+    ul{
+      opacity:0;
+    }
+    &:hover{
+      ul{
+        opacity:1;
+      }
+    }
+  }
+}
+
 .flexbox-container {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -61,7 +75,7 @@ body {
   padding: 0;
   text-align: center;
   display: block;
-  }
+}
 .title {
   background: $black;
   position: absolute;
@@ -87,3 +101,4 @@ body {
   }
 
 }
+

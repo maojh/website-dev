@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="cover flexbox-container" id="myContainer">
-  <div id="loading" style="display: none">
-    <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
+  <div id="loading">
+    <h3>Loading</h3><!-- TODO: replace this a cool spinner! -->
   </div>
   <div class="title">
     {% include icon-logo.html width="6em" %}
@@ -21,12 +21,10 @@ layout: default
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="row fullHeight">
     <div class="col-xs-12">
       <h5>News</h5>
     </div>
-  </div>
-  <div class="row">
     <!-- Show post with category "News" -->
     {% for post in site.categories.news limit:3 %}
      <div class="col-xs-12 col-sm-4">
@@ -35,9 +33,9 @@ layout: default
      </div>
     {% endfor %}
   </div><!--/row-->
-  <div class="row">
+  <div class="row fullHeight">
     <div class="col-xs-12">
-      <h3>Eventi</h3>
+      <h5>Eventi</h5>
     </div>
   </div>
 </div><!--/.container-->

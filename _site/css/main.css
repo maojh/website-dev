@@ -6064,9 +6064,6 @@ button.close {
  * Extra small devices (phones, less than 768px)
  *
 */
-header .navbar-nav {
-  text-transform: uppercase; }
-
 body {
   font-family: "Inconsolata", sans-serif;
   background: #f2f2f2;
@@ -6082,9 +6079,9 @@ body {
     font-weight: 100 !important; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Montserrat", sans-serif;
-    line-height: 1.7em; }
-  body .row {
-    padding: 3em 0; }
+    line-height: 1.2em; }
+  body .fullHeight {
+    padding: 7em 0; }
   body footer {
     margin-bottom: 3em; }
     body footer ul.social {
@@ -6095,6 +6092,19 @@ body {
         margin: 0 1em; }
 
 /*SPECIALS*/
+html, body {
+  height: 100%; }
+
+.navbar-collapse {
+  margin-top: 1em; }
+
+.miniNav li {
+  margin-right: 1em; }
+  .miniNav li ul {
+    opacity: 0; }
+  .miniNav li:hover ul {
+    opacity: 1; }
+
 .flexbox-container {
   display: -ms-flexbox;
   display: -webkit-flex;

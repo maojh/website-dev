@@ -67,7 +67,7 @@
   <body>
 
     <header>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -81,21 +81,29 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Ricerca</a></li>
-        <li><a href="#">Formazione</a></li>
-        <li><a href="#">Progetti</a></li>
-        <li><a href="#">Persone</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chi siamo <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Mission</a></li>
-            <li><a href="#">Manifesto</a></li>
+    <div class="collapse navbar-collapse" >
+      <ul class="miniNav navbar-nav navbar-right">
+        <li>
+          <a href="#">Attività</a>
+          <ul>
+            <li><a href="#">Ricerca</a></li>
+            <li><a href="#">Formazione</a></li>
             <li><a href="#">Meetup</a></li>
           </ul>
         </li>
-        <li><a href="#">Contattaci</a></li>
+        <li>
+          <a href="#">Il Collettivo</a>
+          <ul >
+              <li><a href="#">Manifesto</a></li>
+              <li><a href="#">Persone</a></li>
+          </ul>
+        <li>
+          <a href="#">Progetti</a>
+          <ul>
+              <li><a href="#">Cover</a></li>
+              <li><a href="#">OSC</a></li>
+          </ul>
+        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -105,8 +113,8 @@
 
 
     <div class="cover flexbox-container" id="myContainer">
-  <div id="loading" style="display: none">
-    <p class="text-center">Loading</p><!-- TODO: replace this a cool spinner! -->
+  <div id="loading">
+    <h3>Loading</h3><!-- TODO: replace this a cool spinner! -->
   </div>
   <div class="title">
     <a href="http://localhost:4000">
@@ -132,39 +140,38 @@
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="row fullHeight">
     <div class="col-xs-12">
       <h5>News</h5>
     </div>
-  </div>
-  <div class="row">
     <!-- Show post with category "News" -->
     
      <div class="col-xs-12 col-sm-4">
-       <h2><a class="post-link" href="/news/2016/09/21/lorem_ipsum.html">Lorem Ipsum 3</a></h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae turpis nisl. Donec pretium eros sapien, non dictum odio rutrum at. Nam dolor ante, viverra et mauris ut, venenatis fermentum lorem. Donec eu ultrices elit, id mollis nibh. Nunc nec elit nec dolor viverra bibendum vel nec dui. In feugiat in neque nec aliquet. Fusce fermentum efficitur pretium.</p>
+       <h2><a class="post-link" href="/news/2016/09/21/lorem_ipsum.html">Ma allora io le potrei dire anche con il rispetto per l'autorità</a></h2>
+       <p>No, no.. non era troppo alto. Forse non ha capito.	Io dicevo che se fosse il coso di telefono, o il dito, come se fosse. Andando su o giù, giù o su. Mo basta insomma! Qui c’è gente che soffre per davvero, lo capite? Chiamo il medico di turno e domani ve la vedrete con il professore!</p>
 
 
      </div>
     
      <div class="col-xs-12 col-sm-4">
-       <h2><a class="post-link" href="/news/2016/09/20/lorem_ipsum.html">Lorem Ipsum 2</a></h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae turpis nisl. Donec pretium eros sapien, non dictum odio rutrum at. Nam dolor ante, viverra et mauris ut, venenatis fermentum lorem. Donec eu ultrices elit, id mollis nibh. Nunc nec elit nec dolor viverra bibendum vel nec dui. In feugiat in neque nec aliquet. Fusce fermentum efficitur pretium.</p>
+       <h2><a class="post-link" href="/news/2016/09/20/lorem_ipsum.html">Faceva Du-Du! In che senso? Nel senso anafestico! </a></h2>
+       <p>Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Segua col dito. Vede, se va giù non va su. Se va su non va giù. Si faccia aiutare dalla suora. È quello che stavo dicendo, no!?</p>
 
 
      </div>
     
      <div class="col-xs-12 col-sm-4">
-       <h2><a class="post-link" href="/news/2016/08/20/lorem_ipsum.html">Lorem Ipsum</a></h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae turpis nisl. Donec pretium eros sapien, non dictum odio rutrum at. Nam dolor ante, viverra et mauris ut, venenatis fermentum lorem. Donec eu ultrices elit, id mollis nibh. Nunc nec elit nec dolor viverra bibendum vel nec dui. In feugiat in neque nec aliquet. Fusce fermentum efficitur pretium.</p>
+       <h2><a class="post-link" href="/news/2016/08/20/lorem_ipsum.html">Pattene soppaltate secondo l'articolo 12 abbia pazienza</a></h2>
+       <p>Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. 
+No, io, scusi noi siamo in quattro.</p>
 
 
      </div>
     
   </div><!--/row-->
-  <div class="row">
+  <div class="row fullHeight">
     <div class="col-xs-12">
-      <h3>Eventi</h3>
+      <h5>Eventi</h5>
     </div>
   </div>
 </div><!--/.container-->
