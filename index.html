@@ -14,7 +14,7 @@ layout: default
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="javascript:deferredLoading()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
   </div>
@@ -49,28 +49,60 @@ layout: default
  * - add support for video, images and other things.
  *
 */
+// FUNZIONE ORIGINALE
 function randomPost() {
   $("canvas").remove();
   $("#loading").show();
-  $.ajax({
-    url: "{{ site.url }}/homepage.json",
-    type: "GET",
-    dataType: "JSON",
+  $.get("{{ site.url }}/homepage.json", function() {
   })
   .done(function(data) {
     $("#loading").hide();
-    var randomIndex = Math.floor(Math.random() * data.length);
-    var item = data[randomIndex];
-    $.each(item.includes, function(){
-      $.getScript(this);
+    // Get a random item from the array
+    var item = data[Math.floor(Math.random() * data.length)];
+    $.each(item.includes, function(index, value){
+      $.getScript(value)
+        .done(console.log(value + " loaded"));
     });
-    $.getScript(item.href);
+    $.getScript(item.href)
+      .done(console.log(item.href + " loaded"));
     $(".item-title").html(item.title + ' | ' + item.author);
     $(".item-description").html(item.description);
     //alert(data[randomIndex].includes);
   })
 }
+// TEST con Deferred Object
+function deferredLoading() {
+
+  $("canvas").remove();
+  $("#loading").show();
+
+  var dfd = $.Deferred();
+
+  $.get("{{ site.url }}/homepage.json", function() {
+  })
+  .done(function(data){
+
+    var item = data[Math.floor(Math.random() * data.length)];
+    for(i in item.includes) {
+      dfd.done($.get(item.includes[i]).done());
+    }
+
+    $.when(dfd).done(
+      $.get(item.href).done(
+        $("#loading").hide()
+      )
+    )
+
+    dfd.resolve();
+
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+
+  })
+}
+
 $(document).ready(function() {
-    randomPost();
+    //randomPost();
+    deferredLoading();
 });
 </script>

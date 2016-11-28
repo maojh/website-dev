@@ -36,7 +36,7 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!-- Begin Jekyll SEO tag v2.0.0 -->
+  <!-- Begin Jekyll SEO tag v1.3.3 -->
 <title>Codice Inutile - Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</title>
 <meta property="og:title" content="Codice Inutile" />
 <meta name="description" content="Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice." />
@@ -133,7 +133,7 @@
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="javascript:deferredLoading()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
   </div>
@@ -185,29 +185,61 @@ No, io, scusi noi siamo in quattro.</p>
  * - add support for video, images and other things.
  *
 */
+// FUNZIONE ORIGINALE
 function randomPost() {
   $("canvas").remove();
   $("#loading").show();
-  $.ajax({
-    url: "http://localhost:4000/homepage.json",
-    type: "GET",
-    dataType: "JSON",
+  $.get("http://localhost:4000/homepage.json", function() {
   })
   .done(function(data) {
     $("#loading").hide();
-    var randomIndex = Math.floor(Math.random() * data.length);
-    var item = data[randomIndex];
-    $.each(item.includes, function(){
-      $.getScript(this);
+    // Get a random item from the array
+    var item = data[Math.floor(Math.random() * data.length)];
+    $.each(item.includes, function(index, value){
+      $.getScript(value)
+        .done(console.log(value + " loaded"));
     });
-    $.getScript(item.href);
+    $.getScript(item.href)
+      .done(console.log(item.href + " loaded"));
     $(".item-title").html(item.title + ' | ' + item.author);
     $(".item-description").html(item.description);
     //alert(data[randomIndex].includes);
   })
 }
+// TEST con Deferred Object
+function deferredLoading() {
+
+  $("canvas").remove();
+  $("#loading").show();
+
+  var dfd = $.Deferred();
+
+  $.get("http://localhost:4000/homepage.json", function() {
+  })
+  .done(function(data){
+
+    var item = data[Math.floor(Math.random() * data.length)];
+    for(i in item.includes) {
+      dfd.done($.get(item.includes[i]).done());
+    }
+
+    $.when(dfd).done(
+      $.get(item.href).done(
+        $("#loading").hide()
+      )
+    )
+
+    dfd.resolve();
+
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+
+  })
+}
+
 $(document).ready(function() {
-    randomPost();
+    //randomPost();
+    deferredLoading();
 });
 </script>
 
@@ -245,7 +277,7 @@ $(document).ready(function() {
   ga('send', 'pageview');
   </script>
   <!-- END GOOGLE ANALYTICS -->
-  
+
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
 
@@ -253,16 +285,16 @@ $(document).ready(function() {
   <script>
   $(document).ready(function(){
     // hide .navbar first
-    $(".navbar").hide();
+    $(".navbar").css("opacity","0")
 
     // fade in .navbar
     $(function () {
       $(window).scroll(function () {
         // set distance user needs to scroll before we start fadeIn
         if ($(this).scrollTop() > 100) {
-          $('.navbar').fadeIn();
+          $(".navbar").css("opacity","1");
         } else {
-          $('.navbar').fadeOut();
+          $(".navbar").css("opacity","0");
         }
         });
     });
