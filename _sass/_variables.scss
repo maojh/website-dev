@@ -37,13 +37,17 @@ $black: lighten($ultraBlack, 10%);
     fill: blue;
     color: blue;
   }
-  80% {
+  70% {
     fill: indigo;
     color: indigo;
   }
-  100% {
+  90% {
     fill: violet;
     color: violet;
+  }
+  100% {
+    fill: red;
+    color: red;
   }
 }
 @keyframes background-change{
@@ -67,9 +71,14 @@ $black: lighten($ultraBlack, 10%);
     background: blue;
     color: #fff;
   }
-  80% {
+  70% {
     fill:indigo;
     background: indigo;
+    color: #fff;
+  }
+  90% {
+    fill:violet;
+    background: violet;
     color: #fff;
   }
   100% {

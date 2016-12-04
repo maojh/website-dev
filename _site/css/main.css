@@ -6021,12 +6021,15 @@ button.close {
   60% {
     fill: blue;
     color: blue; }
-  80% {
+  70% {
     fill: indigo;
     color: indigo; }
-  100% {
+  90% {
     fill: violet;
-    color: violet; } }
+    color: violet; }
+  100% {
+    fill: red;
+    color: red; } }
 @keyframes background-change {
   0% {
     fill: red;
@@ -6044,9 +6047,13 @@ button.close {
     fill: blue;
     background: blue;
     color: #fff; }
-  80% {
+  70% {
     fill: indigo;
     background: indigo;
+    color: #fff; }
+  90% {
+    fill: violet;
+    background: violet;
     color: #fff; }
   100% {
     fill: violet;
@@ -6077,6 +6084,8 @@ body {
     -ms-animation: color-change 30s infinite !important;
     animation: color-change 30s infinite !important;
     font-weight: 100 !important; }
+  body canvas {
+    width: 100% !important; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Montserrat", sans-serif;
     line-height: 1.2em; }
