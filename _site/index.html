@@ -133,7 +133,7 @@
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="javascript:deferredLoading()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li><a href="#" id="jsRefresh"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
       <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
   </div>
@@ -185,6 +185,23 @@ No, io, scusi noi siamo in quattro.</p>
  * - add support for video, images and other things.
  *
 */
+
+var loadedData;
+
+$(document).ready(function() {
+    // Load all the scripts in an array
+    $.get("http://localhost:4000/homepage.json").done(function(data){
+      loadedData = data;
+      item = loadedData[Math.floor(Math.random() * data.length)];
+      deferredLoading();
+    });
+
+    $("#jsRefresh").click(function() {
+      $("canvas").remove();
+      deferredLoading();
+    });
+});
+
 // FUNZIONE ORIGINALE
 function randomPost() {
   $("canvas").remove();
@@ -194,7 +211,7 @@ function randomPost() {
   .done(function(data) {
     $("#loading").hide();
     // Get a random item from the array
-    var item = data[Math.floor(Math.random() * data.length)];
+    //var item = data[Math.floor(Math.random() * data.length)];
     $.each(item.includes, function(index, value){
       $.getScript(value)
         .done(console.log(value + " loaded"));
@@ -214,33 +231,23 @@ function deferredLoading() {
 
   var dfd = $.Deferred();
 
-  $.get("http://localhost:4000/homepage.json", function() {
-  })
-  .done(function(data){
+  item = loadedData[Math.floor(Math.random() * loadedData.length)];
 
-    var item = data[Math.floor(Math.random() * data.length)];
-    for(i in item.includes) {
-      dfd.done($.get(item.includes[i]).done());
-    }
+  for(i in item.includes) {
+    dfd.done($.get(item.includes[i]).done());
+  }
 
-    $.when(dfd).done(
-      $.get(item.href).done(
-        $("#loading").hide()
-      )
-    )
+  $.when(dfd).done(
+    $.get(item.href).done(function() {
+      $("#loading").hide();
+      $(".item-title").html(item.title + ' | ' + item.author);
+      $(".item-description").html(item.description);
 
-    dfd.resolve();
+    })
+  )
 
-    $(".item-title").html(item.title + ' | ' + item.author);
-    $(".item-description").html(item.description);
-
-  })
+  dfd.resolve();
 }
-
-$(document).ready(function() {
-    //randomPost();
-    deferredLoading();
-});
 </script>
 
 
