@@ -8,8 +8,8 @@
     "kind": "javascript",
     "href": "{{ site.url }}/js/hero/federico.js",
     "includes": [
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.min.js"
     ]
   },
   {
@@ -18,8 +18,8 @@
     "description": "Lorem ipsum",
     "kind": "javascript",
     "includes": [
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js",
+      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.min.js"
     ],
    "href": "{{ site.url }}/js/hero/alka.js"
   }
