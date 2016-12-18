@@ -56,60 +56,45 @@ $(document).ready(function() {
     // Load all the scripts in an array
     $.get("{{ site.url }}/homepage.json").done(function(data){
       loadedData = data;
-      item = loadedData[Math.floor(Math.random() * data.length)];
-      deferredLoading();
+      randomPost();
     });
 
     $("#jsRefresh").click(function() {
       $("canvas").remove();
-      deferredLoading();
+      randomPost();
     });
 });
 
-// FUNZIONE ORIGINALE
+/*
+  Random post function
+  made by Federico Pepe
+*/
 function randomPost() {
-  $("canvas").remove();
-  $("#loading").show();
-  $.get("{{ site.url }}/homepage.json", function() {
-  })
-  .done(function(data) {
-    $("#loading").hide();
-    // Get a random item from the array
-    //var item = data[Math.floor(Math.random() * data.length)];
-    $.each(item.includes, function(index, value){
-      $.getScript(value)
-        .done(console.log(value + " loaded"));
-    });
-    $.getScript(item.href)
-      .done(console.log(item.href + " loaded"));
-    $(".item-title").html(item.title + ' | ' + item.author);
-    $(".item-description").html(item.description);
-    //alert(data[randomIndex].includes);
-  })
-}
-// TEST con Deferred Object
-function deferredLoading() {
 
-  $("canvas").remove();
   $("#loading").show();
-
-  var dfd = $.Deferred();
 
   item = loadedData[Math.floor(Math.random() * loadedData.length)];
 
-  for(i in item.includes) {
-    dfd.done($.get(item.includes[i]).done());
-  }
+  var defer = $.Deferred();
 
-  $.when(dfd).done(
-    $.get(item.href).done(function() {
-      $("#loading").hide();
-      $(".item-title").html(item.title + ' | ' + item.author);
-      $(".item-description").html(item.description);
+  //alert("Carico elemento Random: " + item.title);
 
+  $.each(item.includes, function(index, value){
+    defer.then(function() {
+      $.getScript(value);
     })
-  )
+  });
 
-  dfd.resolve();
+  defer.then(function() {
+    $.getScript(item.href);
+  })
+
+  defer.resolve();
+
+  $.when(defer).done(function() {
+    $("#loading").hide();
+    $(".item-title").html(item.title + ' | ' + item.author);
+    $(".item-description").html(item.description);
+  })
 }
 </script>
