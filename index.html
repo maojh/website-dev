@@ -52,9 +52,9 @@ layout: default
 
 var loadedData;
 
-$(function() {
+$(document).ready(function() {
     // Load all the scripts in an array
-    $.get("{{ site.url }}/homepage.json", function(data) {
+    $.getJSON("{{ site.url }}/homepage.json", function(data) {
       loadedData = data;
       randomPost();
     });
