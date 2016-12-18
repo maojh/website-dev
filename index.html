@@ -77,19 +77,15 @@ function randomPost() {
 
   var defer = $.Deferred();
 
-  //alert("Carico elemento Random: " + item.title);
-
   $.each(item.includes, function(index, value){
     defer.then(function() {
       $.getScript(value)
-        .done(alert("Step 1"));
-      })
+    });
   });
 
   defer.then(function() {
     $.getScript(item.href)
-      .done(alert("Step 2"));
-  })
+  });
 
   defer.resolve();
 
