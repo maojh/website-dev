@@ -2,9 +2,9 @@
 ---
 [
   {
-    "title": "Lavoro di Federico Pepe",
-    "author": "Federico Pepe",
-    "description": "javascript, Processing",
+    "title": "Should display squares",
+    "author": "Name of author",
+    "description": "Lorem Ipsum",
     "kind": "javascript",
     "href": "{{ site.url }}/js/hero/federico.js",
     "includes": [
@@ -13,9 +13,9 @@
     ]
   },
   {
-    "title": "Lavoro di Alka",
-    "author": "Alka Cappellazzo",
-    "description": "Processing",
+    "title": "Should display circles",
+    "author": "Name of author",
+    "description": "Lorem ipsum",
     "kind": "javascript",
     "includes": [
       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
