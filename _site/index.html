@@ -188,7 +188,7 @@ No, io, scusi noi siamo in quattro.</p>
 
 var loadedData;
 
-$(function() {
+$(document).ready(function() {
     // Load all the scripts in an array
     $.getJSON("http://localhost:4000/homepage.json", function(data) {
       loadedData = data;
@@ -210,43 +210,22 @@ function randomPost() {
   $("#loading").show();
 
   item = loadedData[Math.floor(Math.random() * loadedData.length)];
-
-  var defer = $.Deferred();
-  /*
-  $.each(item.includes, function(index, value){
-    defer.then(function() {
-      $.getScript(value)
-    });
-  });
-
-  defer.then(function() {
-    $.getScript(item.href)
-  });
-
-  defer.resolve();
-  */
   var requests = item.includes.map(function(value) {
     return $.getScript(value)
   });
+
   // `$.when` doesn't accept array in jQuery versions <3
-   $.when.apply(null, requests).then(function() {
+   $.when.apply(null, requests).done(function() {
      //want this to only load after include requests have loaded
      var mainScriptPromise =  $.getScript(item.href);
       // return it to the next then()
       return mainScriptPromise;
-   }).then(function() {
+   }).done(function() {
      // fires after the main script promise resolves
      $("#loading").hide();
      $(".item-title").html(item.title + ' | ' + item.author);
      $(".item-description").html(item.description);
    });
-
-  /*
-  $.when(defer).done(function() {
-    $("#loading").hide();
-    $(".item-title").html(item.title + ' | ' + item.author);
-    $(".item-description").html(item.description);
-  })*/
 }
 </script>
 
