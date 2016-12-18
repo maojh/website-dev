@@ -52,7 +52,7 @@ layout: default
 
 var loadedData;
 
-$(document).ready(function() {
+$(function() {
     // Load all the scripts in an array
     $.getJSON("{{ site.url }}/homepage.json", function(data) {
       loadedData = data;
