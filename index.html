@@ -81,12 +81,22 @@ function randomPost() {
 
   $.each(item.includes, function(index, value){
     defer.then(function() {
-      $.getScript(value);
+      $.getScript(value, function( data, textStatus, jqxhr ) {
+        console.log( data ); // Data returned
+        console.log( textStatus ); // Success
+        console.log( jqxhr.status ); // 200
+        console.log( "Load was performed." );
+      });
     })
   });
 
   defer.then(function() {
-    $.getScript(item.href);
+    $.getScript(item.href, function( data, textStatus, jqxhr ) {
+      console.log( data ); // Data returned
+      console.log( textStatus ); // Success
+      console.log( jqxhr.status ); // 200
+      console.log( "Load was performed." );
+    });
   })
 
   defer.resolve();
