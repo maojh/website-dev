@@ -45,50 +45,68 @@ layout: default
  * This script allows us to load new content dinamically every page load
  * It loads the data from homepage.json.
  * It currently works only with P5.js script.
- * TODO:
- * - add support for video, images and other things.
  *
+ * Made by Federico Pepe and edited by GoToLoop
+ * https://forum.Processing.org/two/discussion/19725/browser-one-click-behind-when-loading-different-p5-sketches-on-click#Item_4
 */
+"use strict";
 
-var loadedData;
+$(document).ready(() => {
+  const $loading = $('#loading'),
+        $title = $('.item-title'),
+        $descript = $('.item-description'),
+        actions = () => (pickAnotherItem(), loadScripts()),
+        intRandom = (n = 2) => n * Math.random() | 0;
 
-$(document).ready(function() {
-    // Load all the scripts in an array
-    $.getJSON("{{ site.url }}/homepage.json", function(data) {
-      loadedData = data;
-      randomPost();
-    });
+  let json, item, idx, scripts;
 
-    $("#jsRefresh").click(function() {
-      $("canvas").remove();
-      randomPost();
-    });
+  // Load the content dinamically
+
+  $.getJSON('{{ site.url }}/homepage.json', data => {
+    if (!data.length)  return $title.html('Error: the JSON array is empty');
+
+    $.ajaxSetup({ cache: true });
+    window.mocha || (window.mocha = 'Hack to stop global auto run for p5.js');
+
+    json = data, actions();
+    $('#jsRefresh').click(actions);
+  })
+   .fail(() => $title.html('Error: unable to load JSON'));
+
+  function pickAnotherItem() {
+    if (json.length === 1)  return item = json[1];
+    for (var rnd; (rnd = intRandom(json.length)) === idx; );
+    return item = json[idx = rnd];
+  }
+
+  function loadScripts() {
+    $loading.show();
+    p5RemoveHack();
+
+    scripts = [...item.includes, item.href];
+    scripts.length && loadOrdered();
+  }
+
+  function loadOrdered() {
+    $.getScript(scripts.shift(), scripts.length && loadOrdered || sketchLoaded);
+  }
+
+  function sketchLoaded() {
+    $loading.hide('slow');
+    $title.html(item.title + ' | ' + item.author);
+    $descript.html(item.description);
+
+    window.p5 && (window.setup || window.draw) && new p5;
+  }
+
+  function p5RemoveHack() {
+    if (window.p5 && p5.instance) {
+      p5.instance.remove();
+      p5.instance = window.setup = window.draw = null;
+    } else {
+      const canv = document.querySelector('canvas');
+      canv && canv.remove();
+    }
+  }
 });
-
-/*
-  Random post function
-  made by Federico Pepe
-*/
-function randomPost() {
-
-  $("#loading").show();
-
-  item = loadedData[Math.floor(Math.random() * loadedData.length)];
-  var requests = item.includes.map(function(value) {
-    return $.getScript(value)
-  });
-
-  // `$.when` doesn't accept array in jQuery versions <3
-   $.when.apply(null, requests).done(function() {
-     //want this to only load after include requests have loaded
-     var mainScriptPromise =  $.getScript(item.href);
-      // return it to the next then()
-      return mainScriptPromise;
-   }).done(function() {
-     // fires after the main script promise resolves
-     $("#loading").hide();
-     $(".item-title").html(item.title + ' | ' + item.author);
-     $(".item-description").html(item.description);
-   });
-}
 </script>
