@@ -4,14 +4,10 @@ Author: Matteo Testa
 Project: behance.com/mojh
 */
 
-var width = 900;
-var height = 500;
-
 function setup() {
-  createCanvas(900, 500);
+  var myCanvas = createCanvas(windowWidth, windowHeight);
+  myCanvas.parent('myContainer');
   background(20);
-  frameRate(60);
-
 }
 
 function draw() {
@@ -44,9 +40,6 @@ function draw() {
      strokeWeight(2);
      line(0, 0, dist, 0);
    }
-
-
-  console.log(frameCount);
   if (frameCount%500==0) {
    background(20);
   }

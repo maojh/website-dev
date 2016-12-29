@@ -3,14 +3,14 @@ layout: default
 ---
 <div class="cover flexbox-container" id="myContainer">
   <div id="loading">
-    <h3>Loading</h3><!-- TODO: replace this a cool spinner! -->
+
   </div>
   <div class="title">
     {% include icon-logo.html width="6em" %}
     <ul>
       <li class="item-title"></li>
       <li class="item-description"></li>
-      <li class="item-level"><i>livello minimo</i></li>
+      <!--<li class="item-level"><i>livello minimo</i></li>-->
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
@@ -92,7 +92,7 @@ $(document).ready(() => {
   }
 
   function sketchLoaded() {
-    $loading.hide('slow');
+    $loading.hide();
     $title.html(item.title + ' | ' + item.author);
     $descript.html(item.description);
 
@@ -108,5 +108,26 @@ $(document).ready(() => {
       canv && canv.remove();
     }
   }
+
+  /*
+   Show navbar on scroll
+   */
+
+  // hide .navbar first
+  $(".navbar").css("opacity","0")
+
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+      // set distance user needs to scroll before we start fadeIn
+      if ($(this).scrollTop() > 100) {
+        $(".navbar").css("opacity","1");
+      } else {
+        $(".navbar").css("opacity","0");
+      }
+      });
+  });
+
+
 });
 </script>

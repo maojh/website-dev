@@ -1,7 +1,7 @@
 ---
 layout: project
-title:  "Titolo"
-date:  ---
+title: "Titolo"
+date: 2016-09-21 10:39:00 +0100
 # last_modified_at:
 # image:
 excerpt: "Brief description"

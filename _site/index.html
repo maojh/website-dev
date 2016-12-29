@@ -77,7 +77,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Codice Inutile</a>
+      <a class="navbar-brand" href="/index.html">Codice Inutile</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -86,19 +86,19 @@
         <li>
           <a href="#">Attività</a>
           <ul>
-            <li><a href="#">Ricerca</a></li>
-            <li><a href="#">Formazione</a></li>
-            <li><a href="#">Meetup</a></li>
+            <li><a href="/ricerca.html">Ricerca</a></li>
+            <li><a href="/formazione.html">Formazione</a></li>
+            <li><a href="/meetup.html">Meetup</a></li>
           </ul>
         </li>
         <li>
           <a href="#">Il Collettivo</a>
           <ul >
-              <li><a href="#">Manifesto</a></li>
-              <li><a href="#">Persone</a></li>
+              <li><a href="/manifesto.html">Manifesto</a></li>
+              <li><a href="/persone.html">Persone</a></li>
           </ul>
         <li>
-          <a href="#">Progetti</a>
+          <a href="/progetti.html">Progetti</a>
           <ul>
               <li><a href="#">Cover</a></li>
               <li><a href="#">OSC</a></li>
@@ -114,7 +114,7 @@
 
     <div class="cover flexbox-container" id="myContainer">
   <div id="loading">
-    <h3>Loading</h3><!-- TODO: replace this a cool spinner! -->
+
   </div>
   <div class="title">
     <a href="http://localhost:4000">
@@ -129,7 +129,7 @@
     <ul>
       <li class="item-title"></li>
       <li class="item-description"></li>
-      <li class="item-level"><i>livello minimo</i></li>
+      <!--<li class="item-level"><i>livello minimo</i></li>-->
     </ul>
     <ul>
       <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
@@ -161,8 +161,8 @@
      </div>
     
      <div class="col-xs-12 col-sm-4">
-       <h2><a class="post-link" href="/news/2016/08/20/lorem_ipsum.html">Pattene soppaltate secondo l'articolo 12 abbia pazienza</a></h2>
-       <p>Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. 
+       <h2><a class="post-link" href="/news/2016/08/20/lorem_ipsum.html">L'articolo 12 abbia pazienza</a></h2>
+       <p>Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta.
 No, io, scusi noi siamo in quattro.</p>
 
 
@@ -181,52 +181,91 @@ No, io, scusi noi siamo in quattro.</p>
  * This script allows us to load new content dinamically every page load
  * It loads the data from homepage.json.
  * It currently works only with P5.js script.
- * TODO:
- * - add support for video, images and other things.
  *
+ * Made by Federico Pepe and edited by GoToLoop
+ * https://forum.Processing.org/two/discussion/19725/browser-one-click-behind-when-loading-different-p5-sketches-on-click#Item_4
 */
+"use strict";
 
-var loadedData;
+$(document).ready(() => {
+  const $loading = $('#loading'),
+        $title = $('.item-title'),
+        $descript = $('.item-description'),
+        actions = () => (pickAnotherItem(), loadScripts()),
+        intRandom = (n = 2) => n * Math.random() | 0;
 
-$(document).ready(function() {
-    // Load all the scripts in an array
-    $.getJSON("http://localhost:4000/homepage.json", function(data) {
-      loadedData = data;
-      randomPost();
-    });
+  let json, item, idx, scripts;
 
-    $("#jsRefresh").click(function() {
-      $("canvas").remove();
-      randomPost();
-    });
-});
+  // Load the content dinamically
 
-/*
-  Random post function
-  made by Federico Pepe
-*/
-function randomPost() {
+  $.getJSON('http://localhost:4000/homepage.json', data => {
+    if (!data.length)  return $title.html('Error: the JSON array is empty');
 
-  $("#loading").show();
+    $.ajaxSetup({ cache: true });
+    window.mocha || (window.mocha = 'Hack to stop global auto run for p5.js');
 
-  item = loadedData[Math.floor(Math.random() * loadedData.length)];
-  var requests = item.includes.map(function(value) {
-    return $.getScript(value)
+    json = data, actions();
+    $('#jsRefresh').click(actions);
+  })
+   .fail(() => $title.html('Error: unable to load JSON'));
+
+  function pickAnotherItem() {
+    if (json.length === 1)  return item = json[1];
+    for (var rnd; (rnd = intRandom(json.length)) === idx; );
+    return item = json[idx = rnd];
+  }
+
+  function loadScripts() {
+    $loading.show();
+    p5RemoveHack();
+
+    scripts = [...item.includes, item.href];
+    scripts.length && loadOrdered();
+  }
+
+  function loadOrdered() {
+    $.getScript(scripts.shift(), scripts.length && loadOrdered || sketchLoaded);
+  }
+
+  function sketchLoaded() {
+    $loading.hide();
+    $title.html(item.title + ' | ' + item.author);
+    $descript.html(item.description);
+
+    window.p5 && (window.setup || window.draw) && new p5;
+  }
+
+  function p5RemoveHack() {
+    if (window.p5 && p5.instance) {
+      p5.instance.remove();
+      p5.instance = window.setup = window.draw = null;
+    } else {
+      const canv = document.querySelector('canvas');
+      canv && canv.remove();
+    }
+  }
+
+  /*
+   Show navbar on scroll
+   */
+
+  // hide .navbar first
+  $(".navbar").css("opacity","0")
+
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+      // set distance user needs to scroll before we start fadeIn
+      if ($(this).scrollTop() > 100) {
+        $(".navbar").css("opacity","1");
+      } else {
+        $(".navbar").css("opacity","0");
+      }
+      });
   });
 
-  // `$.when` doesn't accept array in jQuery versions <3
-   $.when.apply(null, requests).done(function() {
-     //want this to only load after include requests have loaded
-     var mainScriptPromise =  $.getScript(item.href);
-      // return it to the next then()
-      return mainScriptPromise;
-   }).done(function() {
-     // fires after the main script promise resolves
-     $("#loading").hide();
-     $(".item-title").html(item.title + ' | ' + item.author);
-     $(".item-description").html(item.description);
-   });
-}
+
+});
 </script>
 
 
@@ -265,27 +304,7 @@ function randomPost() {
   <!-- END GOOGLE ANALYTICS -->
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Show navbar on scroll -->
-  <script>
-  $(document).ready(function(){
-    // hide .navbar first
-    $(".navbar").css("opacity","0")
-
-    // fade in .navbar
-    $(function () {
-      $(window).scroll(function () {
-        // set distance user needs to scroll before we start fadeIn
-        if ($(this).scrollTop() > 100) {
-          $(".navbar").css("opacity","1");
-        } else {
-          $(".navbar").css("opacity","0");
-        }
-        });
-    });
-  });
-  </script>
+  <script src="/js/bootstrap.min.js"></script>
 
 </footer>
 

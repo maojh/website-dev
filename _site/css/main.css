@@ -6085,11 +6085,17 @@ body {
   body footer {
     margin-bottom: 3em; }
     body footer ul.social {
-      margin-top: 7em;
+      margin-top: 2.5em;
       padding: 0; }
       body footer ul.social li {
         display: inline-block;
         margin: 0 1em; }
+
+.post {
+  margin-top: 70px; }
+
+footer {
+  margin-top: 70px; }
 
 /*SPECIALS*/
 html, body {
@@ -6138,6 +6144,17 @@ html, body {
       font-weight: lighter; }
   .title svg {
     margin-top: -0.3em; }
+
+/*
+ * Loading Spinner
+ * Code generated with: http://loading.io
+ *
+*/
+#loading {
+  min-width: 100%;
+  height: 100%;
+  display: block;
+  background: url("/images/spinner.gif") center no-repeat; }
 
 @media (min-width: 768px) {
   /*
