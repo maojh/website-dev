@@ -1,34 +1,11 @@
 ---
-layout: page
+layout: default
 ---
-<!-- <div class="cover flexbox-container" id="myContainer">
-  <div class="title">
-    {% include icon-logo.html width="6em" %}
-    <ul>
-      <li class="item-title"></li>
-      <li class="item-description"></li>
-      <li class="item-level"><i>livello minimo</i></li>
-    </ul>
-    <ul>
-      <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="javascript:deferredLoading()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
-    </ul>
-  </div>
-</div> -->
-
-<div class="container">
-  <div class="row fullHeight">
+<div class="container" id="ricerca">
+  <div class="row page-title">
     <div class="col-xs-12">
       <h1>Meetup</h1>
+      <p>Edit this file /meetup.html</p>
     </div>
-    <!-- Show post with category "News" -->
-    {% for post in site.categories.meetup %}
-     <div class="col-xs-12 col-sm-4">
-       <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-       {{ post.excerpt }}
-     </div>
-    {% endfor %}
-  </div><!--/row-->
-
+  </div>
 </div><!--/.container-->

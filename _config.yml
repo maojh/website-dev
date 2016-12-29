@@ -16,6 +16,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://codiceinutile.github.io/website-dev" # the base hostname & protocol for your site
 #url: "https://localhost:4000" # the base hostname & protocol for your site
 
+# Collections
+collections:
+  people:
+    output: true
 
 # Social Settings
 newsletter_url: http://eepurl.com/chFYY5
