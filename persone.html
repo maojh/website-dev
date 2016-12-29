@@ -14,7 +14,8 @@ layout: default
   </div>
   <div class="row">
     {% for person in site.people %}
-    <div class="col-xs-4 single-people">
+    <div class="col-xs-4 single-people text-center">
+      {{ person.email | gravatar }}
       <h2 class="text-center"><a href="{{ person.url }}">{{ person.title }}</a></h2>
     </div>
     {% endfor %}
