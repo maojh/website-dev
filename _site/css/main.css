@@ -6094,6 +6094,10 @@ body {
 header {
   margin-bottom: 70px; }
 
+#map {
+  width: 100%;
+  min-height: 700px; }
+
 footer {
   margin-top: 70px; }
 

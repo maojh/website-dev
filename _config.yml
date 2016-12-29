@@ -20,6 +20,8 @@ url: "https://codiceinutile.github.io/website-dev" # the base hostname & protoco
 collections:
   people:
     output: true
+  meetup:
+    output: false
 
 # Social Settings
 newsletter_url: http://eepurl.com/chFYY5

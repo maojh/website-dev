@@ -1,11 +1,51 @@
 ---
 layout: default
 ---
-<div class="container" id="ricerca">
+<div class="container" id="meetup">
   <div class="row page-title">
     <div class="col-xs-12">
       <h1>Meetup</h1>
       <p>Edit this file /meetup.html</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="map">
+      </div>
+    </div>
+  </div>
 </div><!--/.container-->
+<!-- Google Maps API -->
+<script>
+  function initMap() {
+    var rome = {lat: 41.902783, lng: 12.496366};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 6,
+      center: rome
+    });
+
+    {% for meetup in site.meetup %}
+      {% increment counter %}
+
+      var contentString = '{{ meetup.title }}';
+
+        var infowindow_{{ counter }} = new google.maps.InfoWindow({
+          content: contentString,
+          maxWidth: 200
+        });
+
+      var marker_{{ counter }} = new google.maps.Marker({
+        position: {lat: {{ meetup.lat}}, lng: {{ meetup.long }}},
+        map: map,
+        title: '{{ meetup.title }}'
+      });
+
+      marker_{{counter}}.addListener('click', function() {
+        infowindow_{{ counter }}.open(map, marker_{{ counter }});
+      });
+
+    {% endfor %}
+
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0us4pRp0E8btrmGueIHwRx5ELsYsjU_w&callback=initMap"></script>

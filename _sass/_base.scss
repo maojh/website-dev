@@ -3,7 +3,6 @@
  * Extra small devices (phones, less than 768px)
  *
 */
-
 body {
     font-family: $inconsolata;
     background: $white;
@@ -42,6 +41,11 @@ body {
 
 header {
   margin-bottom: 70px;
+}
+
+#map {
+  width: 100%;
+  min-height: 700px;
 }
 
 footer {
