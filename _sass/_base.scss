@@ -46,10 +46,21 @@ header {
 #map {
   width: 100%;
   min-height: 700px;
+  margin: 2em 0 3em;
 }
 
 footer {
   margin-top: 70px;
+}
+
+.lead {
+  margin-bottom: ($jumbotron-padding / 2);
+  font-size: $jumbotron-font-size;
+  font-weight: 200;
+}
+
+h1.fa {
+  font-size: 3.5em;
 }
 
 /*SPECIALS*/
@@ -96,9 +107,9 @@ html, body{
   right: 1em;
   bottom: 0;
   text-align: left;
-  &:hover{
+  /*&:hover{
     font-size: 31px;
-  }
+  }*/
 
   ul {
   list-style: none;

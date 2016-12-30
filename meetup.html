@@ -5,7 +5,6 @@ layout: default
   <div class="row page-title">
     <div class="col-xs-12">
       <h1>Meetup</h1>
-      <p>Edit this file /meetup.html</p>
     </div>
   </div>
   <div class="row">
@@ -13,6 +12,24 @@ layout: default
       <div id="map">
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <p class="lead">Portare il Creative Coding nelle citt&agrave;. Favorire l'incontro, lo scambio e la condivisione. Organizzazione di eventi, gruppi di studio e ricerca in tutte le citt&agrave; italiane.</p>
+      <p>Vuoi creare un <strong>Meetup</strong> nella tua citt&agrave;? Scrivici!</p>
+    </div>
+    {% for meetup in site.meetup %}
+    <div class="col-xs-12 col-sm-4">
+      <h2>{{ meetup.title}}</h2>
+      <p>{{ meetup.excerpt | markdownify }}</p>
+      <ul class="list-inline">
+        <li><a href="mailto:{{ meetup.email }}"><i class="fa fa-inbox" aria-hidden="true"></i> Contatti</a></li>
+        {% if meetup.group != null %}
+        <li><a href="{{ meetup.group }}"><i class="fa fa-globe" aria-hidden="true"></i> Gruppo</a></li>
+        {% endif %}
+      </ul>
+    </div>
+    {% endfor %}
   </div>
 </div><!--/.container-->
 <!-- Google Maps API -->

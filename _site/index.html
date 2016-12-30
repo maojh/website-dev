@@ -106,12 +106,10 @@
   </nav>
 </header>
 
-
+    
 
     <div class="cover flexbox-container" id="myContainer">
-  <div id="loading">
-
-  </div>
+  <div id="loading">&nbsp;</div>
   <div class="title">
     <a href="http://localhost:4000">
   <svg viewBox="0 0 2100 2200" xml:space="preserve" width="6em">
@@ -125,18 +123,40 @@
     <ul>
       <li class="item-title"></li>
       <li class="item-description"></li>
-      <!--<li class="item-level"><i>livello minimo</i></li>-->
     </ul>
     <ul>
-      <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+      <li><a href="http://localhost:4000/progetti.html"><i class="fa fa-th" aria-hidden="true"></i></a></li>
       <li><a href="#" id="jsRefresh"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+      <li class="item-url"></li>
     </ul>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
+  <div class="row fullHeight">
+    <!-- Presentazione -->
+    <div class="col-xs-12">
+      <h5>Codice Inutile</h5>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget faucibus aliquet. Sed sodales felis et mauris iaculis, nec aliquam risus vestibulum.</p>
+      <p>Pellentesque diam turpis, aliquet vitae turpis at, sollicitudin efficitur erat. Pellentesque ut feugiat leo. Sed sed laoreet orci. Proin in convallis purus, at bibendum erat. Vivamus sit amet tellus eget lorem egestas pulvinar. Proin iaculis odio purus, in eleifend eros feugiat et. Suspendisse sit amet felis in dui euismod dapibus. Donec vel quam sagittis, pellentesque erat non, posuere sem. Suspendisse tincidunt nec risus in imperdiet. Suspendisse quis ex nisl. Integer dictum euismod enim ac tincidunt.</p>
+    </div>
+  </div>
+  <div class="row fullHeight">
+    <!-- Ricerca e Formazione -->
+    <div class="col-xs-6">
+      <i class="fa fa-cogs" aria-hidden="true"></i>
+      <h5> Ricerca</h5>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget faucibus aliquet. Sed sodales felis et mauris iaculis, nec aliquam risus vestibulum.</p>
+      <p>Pellentesque diam turpis, aliquet vitae turpis at, sollicitudin efficitur erat. Pellentesque ut feugiat leo. Sed sed laoreet orci. Proin in convallis purus, at bibendum erat. Vivamus sit amet tellus eget lorem egestas pulvinar. Proin iaculis odio purus, in eleifend eros feugiat et. Suspendisse sit amet felis in dui euismod dapibus. Donec vel quam sagittis, pellentesque erat non, posuere sem. Suspendisse tincidunt nec risus in imperdiet. Suspendisse quis ex nisl. Integer dictum euismod enim ac tincidunt.</p>
+    </div>
+    <div class="col-xs-6">
+      <i class="fa fa-rocket" aria-hidden="true"></i>
+      <h5>Formazione</h5>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget faucibus aliquet. Sed sodales felis et mauris iaculis, nec aliquam risus vestibulum.</p>
+      <p>Pellentesque diam turpis, aliquet vitae turpis at, sollicitudin efficitur erat. Pellentesque ut feugiat leo. Sed sed laoreet orci. Proin in convallis purus, at bibendum erat. Vivamus sit amet tellus eget lorem egestas pulvinar. Proin iaculis odio purus, in eleifend eros feugiat et. Suspendisse sit amet felis in dui euismod dapibus. Donec vel quam sagittis, pellentesque erat non, posuere sem. Suspendisse tincidunt nec risus in imperdiet. Suspendisse quis ex nisl. Integer dictum euismod enim ac tincidunt.</p>
+    </div>
+  </div>
+  <div class="row fullHeight">
     <div class="col-xs-12">
       <h5>News</h5>
     </div>
@@ -165,11 +185,6 @@ No, io, scusi noi siamo in quattro.</p>
      </div>
     
   </div><!--/row-->
-  <div class="row">
-    <div class="col-xs-12">
-      <h5>Eventi</h5>
-    </div>
-  </div>
 </div><!--/.container-->
 
 <script>
@@ -187,6 +202,7 @@ $(document).ready(() => {
   const $loading = $('#loading'),
         $title = $('.item-title'),
         $descript = $('.item-description'),
+        $url = $('.item-url'),
         actions = () => (pickAnotherItem(), loadScripts()),
         intRandom = (n = 2) => n * Math.random() | 0;
 
@@ -227,7 +243,7 @@ $(document).ready(() => {
     $loading.hide();
     $title.html(item.title + ' | ' + item.author);
     $descript.html(item.description);
-
+    $url.html('<a href="'+item.url+'"><i class="fa fa-code" aria-hidden="true"></i></a>')
     window.p5 && (window.setup || window.draw) && new p5;
   }
 
