@@ -127,7 +127,7 @@
     <ul>
       <li><a href="http://localhost:4000/progetti.html"><i class="fa fa-th" aria-hidden="true"></i></a></li>
       <li><a href="#" id="jsRefresh"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
-      <li class="item-url"></li>
+      <li class="item-url"><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 </div>
@@ -202,7 +202,6 @@ $(document).ready(() => {
   const $loading = $('#loading'),
         $title = $('.item-title'),
         $descript = $('.item-description'),
-        $url = $('.item-url'),
         actions = () => (pickAnotherItem(), loadScripts()),
         intRandom = (n = 2) => n * Math.random() | 0;
 
@@ -243,7 +242,7 @@ $(document).ready(() => {
     $loading.hide();
     $title.html(item.title + ' | ' + item.author);
     $descript.html(item.description);
-    $url.html('<a href="'+item.url+'"><i class="fa fa-code" aria-hidden="true"></i></a>')
+    $('.item-url a[href]').attr('href', 'http://localhost:4000'+item.url);
     window.p5 && (window.setup || window.draw) && new p5;
   }
 
