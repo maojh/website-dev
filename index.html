@@ -2,25 +2,43 @@
 layout: default
 ---
 <div class="cover flexbox-container" id="myContainer">
-  <div id="loading">
-    <h3>Loading</h3><!-- TODO: replace this a cool spinner! -->
-  </div>
+  <div id="loading">&nbsp;</div>
   <div class="title">
     {% include icon-logo.html width="6em" %}
     <ul>
       <li class="item-title"></li>
       <li class="item-description"></li>
-      <li class="item-level"><i>livello minimo</i></li>
     </ul>
     <ul>
-      <li><a href="#"><i class="fa fa-th" aria-hidden="true"></i></a></li>
-      <li><a href="#" onclick="randomPost()"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
-      <li><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+      <li><a href="{{site.url}}/progetti.html"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+      <li><a href="#" id="jsRefresh"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
+      <li class="item-url"><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
   </div>
 </div>
 
 <div class="container">
+  <div class="row fullHeight">
+    <!-- Presentazione -->
+    <div class="col-xs-12">
+      <h5>Codice Inutile</h5>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget faucibus aliquet. Sed sodales felis et mauris iaculis, nec aliquam risus vestibulum.</p>
+      <p>Pellentesque diam turpis, aliquet vitae turpis at, sollicitudin efficitur erat. Pellentesque ut feugiat leo. Sed sed laoreet orci. Proin in convallis purus, at bibendum erat. Vivamus sit amet tellus eget lorem egestas pulvinar. Proin iaculis odio purus, in eleifend eros feugiat et. Suspendisse sit amet felis in dui euismod dapibus. Donec vel quam sagittis, pellentesque erat non, posuere sem. Suspendisse tincidunt nec risus in imperdiet. Suspendisse quis ex nisl. Integer dictum euismod enim ac tincidunt.</p>
+    </div>
+  </div>
+  <div class="row fullHeight">
+    <!-- Ricerca e Formazione -->
+    <div class="col-xs-6">
+      <h5> Ricerca</h5>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget faucibus aliquet. Sed sodales felis et mauris iaculis, nec aliquam risus vestibulum.</p>
+      <p>Pellentesque diam turpis, aliquet vitae turpis at, sollicitudin efficitur erat. Pellentesque ut feugiat leo. Sed sed laoreet orci. Proin in convallis purus, at bibendum erat. Vivamus sit amet tellus eget lorem egestas pulvinar. Proin iaculis odio purus, in eleifend eros feugiat et. Suspendisse sit amet felis in dui euismod dapibus. Donec vel quam sagittis, pellentesque erat non, posuere sem. Suspendisse tincidunt nec risus in imperdiet. Suspendisse quis ex nisl. Integer dictum euismod enim ac tincidunt.</p>
+    </div>
+    <div class="col-xs-6">
+      <h5>Formazione</h5>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consectetur est eget faucibus aliquet. Sed sodales felis et mauris iaculis, nec aliquam risus vestibulum.</p>
+      <p>Pellentesque diam turpis, aliquet vitae turpis at, sollicitudin efficitur erat. Pellentesque ut feugiat leo. Sed sed laoreet orci. Proin in convallis purus, at bibendum erat. Vivamus sit amet tellus eget lorem egestas pulvinar. Proin iaculis odio purus, in eleifend eros feugiat et. Suspendisse sit amet felis in dui euismod dapibus. Donec vel quam sagittis, pellentesque erat non, posuere sem. Suspendisse tincidunt nec risus in imperdiet. Suspendisse quis ex nisl. Integer dictum euismod enim ac tincidunt.</p>
+    </div>
+  </div>
   <div class="row fullHeight">
     <div class="col-xs-12">
       <h5>News</h5>
@@ -33,11 +51,6 @@ layout: default
      </div>
     {% endfor %}
   </div><!--/row-->
-  <div class="row fullHeight">
-    <div class="col-xs-12">
-      <h5>Eventi</h5>
-    </div>
-  </div>
 </div><!--/.container-->
 
 <script>
@@ -45,32 +58,89 @@ layout: default
  * This script allows us to load new content dinamically every page load
  * It loads the data from homepage.json.
  * It currently works only with P5.js script.
- * TODO:
- * - add support for video, images and other things.
  *
+ * Made by Federico Pepe and edited by GoToLoop
+ * https://forum.Processing.org/two/discussion/19725/browser-one-click-behind-when-loading-different-p5-sketches-on-click#Item_4
 */
-function randomPost() {
-  $("canvas").remove();
-  $("#loading").show();
-  $.ajax({
-    url: "{{ site.url }}/homepage.json",
-    type: "GET",
-    dataType: "JSON",
+"use strict";
+
+$(document).ready(() => {
+  const $loading = $('#loading'),
+        $title = $('.item-title'),
+        $descript = $('.item-description'),
+        actions = () => (pickAnotherItem(), loadScripts()),
+        intRandom = (n = 2) => n * Math.random() | 0;
+
+  let json, item, idx, scripts;
+
+  // Load the content dinamically
+
+  $.getJSON('{{ site.url }}/homepage.json', data => {
+    if (!data.length)  return $title.html('Error: the JSON array is empty');
+
+    $.ajaxSetup({ cache: true });
+    window.mocha || (window.mocha = 'Hack to stop global auto run for p5.js');
+
+    json = data, actions();
+    $('#jsRefresh').click(actions);
   })
-  .done(function(data) {
-    $("#loading").hide();
-    var randomIndex = Math.floor(Math.random() * data.length);
-    var item = data[randomIndex];
-    $.each(item.includes, function(){
-      $.getScript(this);
-    });
-    $.getScript(item.href);
-    $(".item-title").html(item.title + ' | ' + item.author);
-    $(".item-description").html(item.description);
-    //alert(data[randomIndex].includes);
-  })
-}
-$(document).ready(function() {
-    randomPost();
+   .fail(() => $title.html('Error: unable to load JSON'));
+
+  function pickAnotherItem() {
+    if (json.length === 1)  return item = json[1];
+    for (var rnd; (rnd = intRandom(json.length)) === idx; );
+    return item = json[idx = rnd];
+  }
+
+  function loadScripts() {
+    $loading.show();
+    p5RemoveHack();
+
+    scripts = [...item.includes, item.href];
+    scripts.length && loadOrdered();
+  }
+
+  function loadOrdered() {
+    $.getScript(scripts.shift(), scripts.length && loadOrdered || sketchLoaded);
+  }
+
+  function sketchLoaded() {
+    $loading.hide();
+    $title.html(item.title + ' | ' + item.author);
+    $descript.html(item.description);
+    $('.item-url a[href]').attr('href', '{{site.url}}'+item.url);
+    window.p5 && (window.setup || window.draw) && new p5;
+  }
+
+  function p5RemoveHack() {
+    if (window.p5 && p5.instance) {
+      p5.instance.remove();
+      p5.instance = window.setup = window.draw = null;
+    } else {
+      const canv = document.querySelector('canvas');
+      canv && canv.remove();
+    }
+  }
+
+  /*
+   Show navbar on scroll
+   */
+
+  // hide .navbar first
+  $(".navbar").css("opacity","0")
+
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+      // set distance user needs to scroll before we start fadeIn
+      if ($(this).scrollTop() > 100) {
+        $(".navbar").css("opacity","1");
+      } else {
+        $(".navbar").css("opacity","0");
+      }
+      });
+  });
+
+
 });
 </script>
