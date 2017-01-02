@@ -3,7 +3,6 @@
  * Extra small devices (phones, less than 768px)
  *
 */
-
 body {
     font-family: $inconsolata;
     background: $white;
@@ -18,9 +17,7 @@ body {
       animation: color-change 30s infinite !important;
       font-weight: 100 !important;
     }
-    canvas {
-      width: 100% !important;
-    }
+
     h1, h2, h3, h4, h5, h6{
         font-family: $monserrat;
         line-height: 1.2em;
@@ -31,7 +28,7 @@ body {
     }
     footer{
         ul.social {
-            margin-top:7em;
+            margin-top:2.5em;
             padding:0;
             li {
                 display:inline-block;
@@ -41,6 +38,31 @@ body {
         margin-bottom: 3em;
     }
 }
+
+header {
+  margin-bottom: 70px;
+}
+
+#map {
+  width: 100%;
+  min-height: 700px;
+  margin: 2em 0 3em;
+}
+
+footer {
+  margin-top: 70px;
+}
+
+.lead {
+  margin-bottom: ($jumbotron-padding / 2);
+  font-size: $jumbotron-font-size;
+  font-weight: 200;
+}
+
+h1.fa {
+  font-size: 3.5em;
+}
+
 /*SPECIALS*/
 html, body{
   height: 100%; //fullHeight
@@ -75,6 +97,7 @@ html, body{
   max-width: 100%;
   height: 100%;
   padding: 0;
+  margin-top: -70px;
   text-align: center;
   display: block;
 }
@@ -84,9 +107,9 @@ html, body{
   right: 1em;
   bottom: 0;
   text-align: left;
-  &:hover{
+  /*&:hover{
     font-size: 31px;
-  }
+  }*/
 
   ul {
   list-style: none;
@@ -104,3 +127,14 @@ html, body{
 
 }
 
+/*
+ * Loading Spinner
+ * Code generated with: http://loading.io
+ *
+*/
+#loading {
+  min-width: 100%;
+  height: 100%;
+  display: block;
+  background: url('/images/spinner.gif') center no-repeat;
+}
