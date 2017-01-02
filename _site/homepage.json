@@ -1,36 +1,43 @@
 [
-  {
-    "title": "Lavoro di Federico Pepe",
-    "author": "Federico Pepe",
-    "description": "javascript, Processing",
-    "kind": "javascript",
-    "href": "http://localhost:4000/js/hero/federico.js",
-    "includes": [
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
-    ]
-  },
-  {
-    "title": "Lavoro di Alka",
-    "author": "Alka Cappellazzo",
-    "description": "Processing",
-    "kind": "javascript",
-    "includes": [
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
-    ],
-   "href": "http://localhost:4000/js/hero/alka.js"
-  },
-  {
-    "title": "Retini",
-    "author": "cybermarinella",
-    "description": "P5",
-    "kind": "p5",
-    "includes": [
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"
-    ],
-   "href": "http://localhost:4000/js/hero/mari_retini.js"
-  }
-
+  
+   {
+     "title"        : "Pixel Dawn",
+     "author"       : "Matteo Testa",
+     "description"  : "Un progetto di Matteo Testa",
+     "url"         : "/project/2016/12/30/esempio_project_matteo.html",
+     "href"         : "https://codiceinutile.github.io/website-dev/js/projects/matteo.js",
+     
+     "includes"     : [
+       
+       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"
+       ,
+       
+       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.min.js"
+       
+       
+     ]
+     
+   }
+   ,
+   
+   {
+     "title"        : "This should display squares",
+     "author"       : "Federico Pepe",
+     "description"  : "Un progetto di Federico Pepe",
+     "url"         : "/project/2016/12/30/esempio_project.html",
+     "href"         : "https://codiceinutile.github.io/website-dev/js/projects/test_1.js",
+     
+     "includes"     : [
+       
+       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"
+       ,
+       
+       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.min.js"
+       
+       
+     ]
+     
+   }
+   
+   
 ]

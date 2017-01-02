@@ -34,56 +34,15 @@ $black: lighten($ultraBlack, 10%);
     color: green;
   }
   60% {
-    fill: blue;
-    color: blue;
+    fill: #4267ff;
+    color: #4267ff;
   }
-  70% {
-    fill: indigo;
-    color: indigo;
-  }
-  90% {
+  80% {
     fill: violet;
     color: violet;
   }
   100% {
     fill: red;
     color: red;
-  }
-}
-@keyframes background-change{
-  0% {
-    fill: red;
-    background: red;
-    color: #fff;
-  }
-  20% {
-    fill:orange;
-    background: orange;
-    color: #fff;
-  }
-  40% {
-    fill:green;
-    background: green;
-    color: #fff;
-  }
-  60% {
-    fill:blue;
-    background: blue;
-    color: #fff;
-  }
-  70% {
-    fill:indigo;
-    background: indigo;
-    color: #fff;
-  }
-  90% {
-    fill:violet;
-    background: violet;
-    color: #fff;
-  }
-  100% {
-    fill:violet;
-    background: violet;
-    color: #fff;
   }
 }

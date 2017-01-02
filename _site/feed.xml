@@ -3,14 +3,44 @@
   <channel>
     <title>Codice Inutile</title>
     <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 03 Dec 2016 15:08:39 +0000</pubDate>
-    <lastBuildDate>Sat, 03 Dec 2016 15:08:39 +0000</lastBuildDate>
-    <generator>Jekyll v3.3.0</generator>
+    <link>https://codiceinutile.github.io/website-dev/</link>
+    <atom:link href="https://codiceinutile.github.io/website-dev/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 02 Jan 2017 14:22:40 +0000</pubDate>
+    <lastBuildDate>Mon, 02 Jan 2017 14:22:40 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>Ma allora io le potrei dire anche con il rispetto per l'autorità</title>
+        <title>Pixel Dawn</title>
+        <description>&lt;h1 id=&quot;descrizione-del-progetto&quot;&gt;Descrizione del progetto&lt;/h1&gt;
+
+&lt;p&gt;Questo è il testo di spiegazione&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Dec 2016 09:40:00 +0000</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project_matteo.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project_matteo.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>This should display squares</title>
+        <description>&lt;h1 id=&quot;this-should-display-circles&quot;&gt;This should display circles&lt;/h1&gt;
+
+&lt;p&gt;Questo è il testo di spiegazione&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Dec 2016 09:39:00 +0000</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Ma allora io le potrei dire anche con il rispetto per l&#39;autorità</title>
         <description>&lt;p&gt;No, no.. non era troppo alto. Forse non ha capito.	Io dicevo che se fosse il coso di telefono, o il dito, come se fosse. Andando su o giù, giù o su. Mo basta insomma! Qui c’è gente che soffre per davvero, lo capite? Chiamo il medico di turno e domani ve la vedrete con il professore!&lt;/p&gt;
 
 &lt;p&gt;Come se fosse antani anche per lei soltanto in due, oppure in quattro anche scribai con cofandina; come antifurto, per esempio. Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Ma che antifurto, mi faccia il piacere! Questi signori qui stavano sonando loro.&lt;/p&gt;
@@ -18,8 +48,8 @@
 &lt;p&gt;Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Segua col dito. Vede, se va giù non va su. Se va su non va giù. Si faccia aiutare dalla suora. È quello che stavo dicendo, no!? Si, ma la sbiriguda della sbrindellona come se fosse antani come faceva? Prego? Ho provato con la supercazzola con scappelamento paraplegico a sinistra, ma non funzionava. Ma allora io le potrei dire anche con il rispetto per l’autorità, che anche soltanto le due cose come vice-sindaco, capisce? Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni.&lt;/p&gt;
 </description>
         <pubDate>Wed, 21 Sep 2016 10:39:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2016/09/21/lorem_ipsum.html</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/09/21/lorem_ipsum.html</guid>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/09/21/lorem_ipsum.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/21/lorem_ipsum.html</guid>
         
         
         <category>news</category>
@@ -36,8 +66,8 @@
 
 </description>
         <pubDate>Tue, 20 Sep 2016 10:39:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2016/09/20/lorem_ipsum.html</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/09/20/lorem_ipsum.html</guid>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/09/20/lorem_ipsum.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/20/lorem_ipsum.html</guid>
         
         
         <category>news</category>
@@ -45,8 +75,8 @@
       </item>
     
       <item>
-        <title>Pattene soppaltate secondo l'articolo 12 abbia pazienza</title>
-        <description>&lt;p&gt;Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. 
+        <title>L&#39;articolo 12 abbia pazienza</title>
+        <description>&lt;p&gt;Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta.
 No, io, scusi noi siamo in quattro.&lt;/p&gt;
 
 &lt;p&gt;Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. No, io, scusi noi siamo in quattro. Si, ma la sbiriguda della sbrindellona come se fosse antani come faceva? Prego? Ho provato con la supercazzola con scappelamento paraplegico a sinistra, ma non funzionava. Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. No, io, scusi noi siamo in quattro.&lt;/p&gt;
@@ -54,8 +84,8 @@ No, io, scusi noi siamo in quattro.&lt;/p&gt;
 &lt;p&gt;Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. No, io, scusi noi siamo in quattro. E lei.. cosa si sente? Professore, non le dico. Antani come trazione per due anche se fosse supercazzola bitumata, ha lo scappellamento a destra. Vicesindaco? Basta ‘osì, mi seguano al commissariato! No, no, no, attenzione, noo! Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna!&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Aug 2016 10:39:00 +0100</pubDate>
-        <link>http://localhost:4000/news/2016/08/20/lorem_ipsum.html</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/08/20/lorem_ipsum.html</guid>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/08/20/lorem_ipsum.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/08/20/lorem_ipsum.html</guid>
         
         
         <category>news</category>
@@ -126,14 +156,14 @@ No, io, scusi noi siamo in quattro.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTA&lt;/strong&gt;: Per frequentare il secondo e terzo modulo è necessario frequentare il primo o dimostrare di avere già una conoscenza di base di Processing.&lt;/p&gt;
 
 &lt;h3 id=&quot;il-workshop--realizzato-in-collaborazione-con&quot;&gt;Il workshop è realizzato in collaborazione con&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.jpg&quot; alt=&quot;Lino's and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.jpg&quot; alt=&quot;Lino&#39;s and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.izona.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_interzona.jpg&quot; alt=&quot;Interzona&quot; height=&quot;50px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.jpg&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jul 2016 10:39:00 +0100</pubDate>
-        <link>http://localhost:4000/workshop/news/2016/07/20/workshop_creative_coding_verona.html</link>
-        <guid isPermaLink="true">http://localhost:4000/workshop/news/2016/07/20/workshop_creative_coding_verona.html</guid>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</guid>
         
         <category>Processing</category>
         
@@ -141,8 +171,6 @@ No, io, scusi noi siamo in quattro.&lt;/p&gt;
         
         <category>Verona</category>
         
-        
-        <category>workshop</category>
         
         <category>news</category>
         
