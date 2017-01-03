@@ -9,13 +9,19 @@ body {
     color: $black;
     height: 100%;
     font-size: 16px;
-    a:hover, h1, .active, a, a:visited, svg *, .title {
+    overflow-x: hidden; /*sarebbe meglio correggere js*/
+    a:hover, h1, .active, a, a:visited, svg * , .title{
       -webkit-animation: color-change 30s infinite !important;
       -moz-animation: color-change 30s infinite !important;
       -o-animation: color-change 30s infinite !important;
       -ms-animation: color-change 30s infinite !important;
       animation: color-change 30s infinite !important;
       font-weight: 100 !important;
+    }
+
+    .navbar{
+      background:rgba($white, 0.9);
+
     }
 
     h1, h2, h3, h4, h5, h6{
@@ -54,9 +60,10 @@ footer {
 }
 
 .lead {
-  margin-bottom: ($jumbotron-padding / 2);
+  margin-bottom: 0.4em;
   font-size: $jumbotron-font-size;
   font-weight: 200;
+  font-family: $monserrat;
 }
 
 h1.fa {
@@ -72,13 +79,16 @@ html, body{
 }
 .miniNav{
   li{
-    margin-right: 1em;
+    margin: 0 1em;
     ul{
       opacity:0;
+      position:absolute;
+      background:rgba($white, 0.9);
     }
     &:hover{
       ul{
         opacity:1;
+        position: absolute;
       }
     }
   }
@@ -105,7 +115,7 @@ html, body{
   background: $black;
   position: absolute;
   right: 1em;
-  bottom: 0;
+  bottom: 1em;
   text-align: left;
   /*&:hover{
     font-size: 31px;
