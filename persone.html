@@ -1,0 +1,24 @@
+---
+# Last edit: 29.12.2016 by Federico Pepe
+# Questa pagina carica automaticamente i contenuti della collection _people
+#
+layout: default
+---
+
+<div class="container" id="persone">
+  <div class="row page-title">
+    <div class="col-xs-12">
+      <h1>Persone</h1>
+      <p>Per modificare il template di questa pagina, modifica il file /persone.html</p>
+    </div>
+  </div>
+  <div class="row">
+    {% for person in site.people %}
+    <div class="col-xs-4 single-people text-center">
+      <h2 class="text-center"><a href="{{ person.url }}">{{ person.title }}</a></h2>
+    </div>
+    {% endfor %}
+  </div>
+
+
+</div><!--/.container-->
