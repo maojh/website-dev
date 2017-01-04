@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codice Inutile</title>
+    <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
+    <link>https://codiceinutile.github.io/website-dev/</link>
+    <atom:link href="https://codiceinutile.github.io/website-dev/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 04 Jan 2017 13:42:40 +0000</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 13:42:40 +0000</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Pixel Dawn</title>
+        <description>&lt;h1 id=&quot;descrizione-del-progetto&quot;&gt;Descrizione del progetto&lt;/h1&gt;
+
+&lt;p&gt;Questo è il testo di spiegazione&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Dec 2016 09:40:00 +0000</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project_matteo.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project_matteo.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>This should display squares</title>
+        <description>&lt;h1 id=&quot;this-should-display-circles&quot;&gt;This should display circles&lt;/h1&gt;
+
+&lt;p&gt;Questo è il testo di spiegazione&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Dec 2016 09:39:00 +0000</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project.html</guid>
+        
+        
+        <category>project</category>
+        
+      </item>
+    
+      <item>
+        <title>Game Over &#39;16 Festival Milano</title>
+        <description>&lt;p&gt;La terza edizione del Game Over si conferma un incredibile ambiente di sviluppo per le più varie attività nell’ambito dell’arte digitale, dell’intrattenimento, e della cultura DIY.
+Quest’anno alcuni membri di Codice Inutile, già partecipi alle scorse edizioni e in contatto con gli organizzatori, hanno ideato e proposto al pubblico due attività. Proseguendo l’intento di diffusione del Codice Creativo su una vie parallela ai workshop di Processing a Verona, con un format adatto ai tempi e al pubblico dell’occasione.
+Tutto ciò in stretta collaborazione con il &lt;a href=&quot;https://www.poul.org/&quot;&gt;Polimi Unix Lab&lt;/a&gt; che ci ha fornito attrezzatura e supporto tecnico per realizzare il progetto, oltre che condividere questa esperienza per i due giorni del festival.&lt;/p&gt;
+
+&lt;p&gt;Un’occasione preziosa per conoscere realtà nazionali affini, scambiare idee e progettare collaborazioni, portare avanti il nostro obbiettivo principale che è costruire una rete nazionale e multidisciplinare con cui promuovere la cultura del Codice Creativo e interfacciarsi con le scene estere.&lt;/p&gt;
+
+&lt;h2 id=&quot;glitch-the-logo---push-information-disorder-into-brand-identity&quot;&gt;Glitch the Logo - Push Information disorder into brand identity&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Ideato da Alberto Massa&lt;/em&gt;
+&lt;em&gt;con Lorenzo Banfi e Matteo Testa.&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“glitch art is often aestheticized and fetishized technological
+[human] errors or anticipated accidents that can produce
+unintended [desired] results.” a. britz&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La Glitch Art è una corrente e un’insieme di tecniche artistiche esistenti da diversi decenni ma che sempre più negli ultimi anni si sta guadagnando spazio, fuori dagli ambienti d’avanguardia fino alla cultura mainstream come parte di produzioni di arte, design e intrattenimento.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/glitch1.png&quot; alt=&quot;Analog Glitch&quot; class=&quot;img-responsive&quot; /&gt;
+Paik-Nam June, 1965&lt;/p&gt;
+
+&lt;p&gt;Un semplice principio: valorizzare l’errore o il disturbo di un sistema, come uno schermo o un circuito audio, portato ai limiti del funzionamento previsto dai costruttori.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/glitch2.png&quot; alt=&quot;Neural network&quot; class=&quot;img-responsive&quot; /&gt;
+Deep Dream, 2015&lt;/p&gt;
+
+&lt;p&gt;Una sterminata varietà di pratiche come il databending, la manipolazione dei formati o la corruzione automatica del codice esadecimale.&lt;/p&gt;
+
+&lt;p&gt;Ecco l’idea di organizzare un workshop che aprisse una panoramica ampia delle pratiche esistenti dalle più semplici ad alcune esoteriche, per metterle subito in pratica, l’unico modo per imparare in un campo dove esistono solo modi per sbagliare e nessuna regola.
+un secondo momento è stato dedicato al confronto, lo scambio di visioni e consigli fra i partecipanti, che è l’anima di Codice Inutile.&lt;/p&gt;
+
+&lt;h3 id=&quot;temi-trattati&quot;&gt;Temi trattati&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reinterpretazione&lt;/li&gt;
+  &lt;li&gt;Errore forzato&lt;/li&gt;
+  &lt;li&gt;Modifiche arbitrarie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hands-on&quot;&gt;Hands on**&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Zalgo&lt;/li&gt;
+  &lt;li&gt;Hex Corruption&lt;/li&gt;
+  &lt;li&gt;Audio Filter on image&lt;/li&gt;
+  &lt;li&gt;Random Char Substitution
+    &lt;ul&gt;
+      &lt;li&gt;Immagine&lt;/li&gt;
+      &lt;li&gt;Gif animata&lt;/li&gt;
+      &lt;li&gt;3D Mesh&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/glitch3.bmp&quot; alt=&quot;Audio Filter&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;/images/posts/glitch4.bmp&quot; alt=&quot;Format&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;/images/posts/glitch5.jpg&quot; alt=&quot;Hex Corruption&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;shader-contest---embrace-the-fragment&quot;&gt;Shader Contest - Embrace the Fragment&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Condotto e organizzato da Edoardo Negri, Lorenzo Banfi, Matteo Testa.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Durante il secondo giorno di festival abbiamo organizzato un Contest per portare l’affascinante mondo degli Shader al pubblico con un focus particolare sull’uso per il live/creative coding.
+Questo progetto nasce da una ricerca in corso nel collettivo come presentazione e benchmark in vista di una serie di workshop durante le serate di &lt;a href=&quot;https://www.facebook.com/groups/1541449069410868/&quot;&gt;Milano Live Coding&lt;/a&gt; presso &lt;a href=&quot;https://www.facebook.com/wemake.cc/?fref=ts&quot;&gt;weMake&lt;/a&gt;.
+Un esperimento oltre il nostro consueto format workshops+talk per superare la barriera di accesso di questa tecnologia coinvolgendo il pubblico con un progetto collaborativo aperto, e offrendo assistenza per muovere i primi passi.&lt;/p&gt;
+
+&lt;h3 id=&quot;shader&quot;&gt;Shader&lt;/h3&gt;
+
+&lt;p&gt;Gli shader sono codici eseguiti dalla scheda grafica durante la fase di rendering delle immagini. A differenza di altri sistemi di programmazione per la grafica risulta estremamente efficiente, per l’uso di diretto dell’hardware senza passare dalla cpu del computer che non è dedicata alle operazioni grafiche.
+Al prezzo di una maggiore difficoltà di sviluppo, rispetto ad esempio a &lt;a href=&quot;https://processing.org/&quot;&gt;Processing&lt;/a&gt;, e per le logiche a basso livello specifiche del linguaggio GLSL che si basano sul funzionamento del motore grafico &lt;a href=&quot;https://www.opengl.org/&quot;&gt;OpenGL&lt;/a&gt;.
+La potenza e la flessibiltà di OpenGL ne fanno lo strumento ideale per sviluppare grafiche, ambienti 3D interattivi per applicazioni online con &lt;a href=&quot;https://www.chromeexperiments.com/webgl&quot;&gt;WebGL&lt;/a&gt; e per installazioni o performance artistiche.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go4.PNG&quot; alt=&quot;Shader Example&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;attivit&quot;&gt;Attività&lt;/h3&gt;
+
+&lt;p&gt;Allo stand di Codice Inutile è stata resa disponibile una piattaforma per collegarsi e produrre shaders che venivano proiettati in diretta sulla parete di fronte, attirando l’attenzione delle persone di passaggio con le opere work in progress e su chi partecipava all’attività.
+Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collegarsi per utilizzare l’editor live &lt;a href=&quot;http://mrdoob.com/projects/glsl_sandbox/&quot;&gt;glslViewer&lt;/a&gt; di &lt;a href=&quot;https://github.com/mrdoob&quot;&gt;mr.Doob&lt;/a&gt; o per visualizzare gli shaders esistenti come punto di partenza per i propri. Nel server si è raccolto così in diretta un archivio di esempi su cui sperimentare che documenta il lavoro collettivo del pomeriggio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go3.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go2.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go1.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 24 Sep 2016 21:00:00 +0100</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/09/24/gameover-milano.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/24/gameover-milano.html</guid>
+        
+        <category>GameOver</category>
+        
+        <category>Shader Contest</category>
+        
+        <category>Glitch Art</category>
+        
+        <category>Workshop</category>
+        
+        <category>Milano</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>L&#39;articolo 12 abbia pazienza</title>
+        <description>&lt;p&gt;Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta.
+No, io, scusi noi siamo in quattro.&lt;/p&gt;
+
+&lt;p&gt;Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. No, io, scusi noi siamo in quattro. Si, ma la sbiriguda della sbrindellona come se fosse antani come faceva? Prego? Ho provato con la supercazzola con scappelamento paraplegico a sinistra, ma non funzionava. Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. No, io, scusi noi siamo in quattro.&lt;/p&gt;
+
+&lt;p&gt;Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna! Che non si ripeta più, vada pure! Senz’altro!!! Tarapia tapioco! Brematurata la supercazzola o scherziamo? Prego? No, mi permetta. No, io, scusi noi siamo in quattro. E lei.. cosa si sente? Professore, non le dico. Antani come trazione per due anche se fosse supercazzola bitumata, ha lo scappellamento a destra. Vicesindaco? Basta ‘osì, mi seguano al commissariato! No, no, no, attenzione, noo! Sorella? Eh!? Col tarapia tapioco come se fosse la supercazzola per lei. Voglio il cappellano, il cappellano! Ho visto la Madonna!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Aug 2016 10:39:00 +0100</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/08/20/lorem_ipsum.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/08/20/lorem_ipsum.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Workshop Creative Coding a Verona</title>
+        <description>&lt;p&gt;Partiamo da un presupposto: tutti possono imparare a programmare. La domanda che sorge spontanea, però, è: perché dovresti farlo? Nell’immaginario comune i programmatori sono dei nerd chiusi in stanze buie che fanno un lavoro noioso; imparare a programmare, però, significa acquisire una metodologia di pensiero e di risoluzione di problemi che può tornare utile anche nella vita quotidiana oltre a competenze sempre più richieste nel mondo del lavoro. In particolare, quando si rientra nell’ambito del creative coding la programmazione può essere utilizzata come mezzo per esprimersi creativamente.&lt;/p&gt;
+
+&lt;p&gt;Lo scopo di questo workshop, suddiviso in tre moduli, è quello di offrire una conoscenza di base del linguaggio di programmazione Processing e sviluppare dei progetti di arte generativa e di data visualization.&lt;/p&gt;
+
+&lt;h2 id=&quot;modulo-1-processing-base-3-4-settembre&quot;&gt;Modulo 1: Processing Base (3-4 settembre)&lt;/h2&gt;
+&lt;p&gt;Tenuto da: &lt;strong&gt;Federico Pepe&lt;/strong&gt;, &lt;strong&gt;location:&lt;/strong&gt; questo modulo si terrà presso &lt;a href=&quot;http://www.311verona.com&quot;&gt;311 Verona&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lo scopo di questo primo modulo è fornire una preparazione di base sul linguaggio di programmazione Processing necessaria per affrontare i due moduli successivi. Il percorso parte da zero e accompagna i partecipanti nella scoperta di tutti le componenti fondamentali di questo linguaggio necessari per realizzare piccoli e grandi progetti: dalle primitive 2D, ai controlli condizionali, dalle funzioni personalizzate alla programmazione orientata agli oggetti.&lt;/p&gt;
+
+&lt;h3 id=&quot;argomenti-trattati&quot;&gt;Argomenti trattati&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduzione al Creative Coding e a Processing&lt;/li&gt;
+  &lt;li&gt;Primitive 2D&lt;/li&gt;
+  &lt;li&gt;Colori: da B/N a RGB&lt;/li&gt;
+  &lt;li&gt;Flusso del programma: setup e draw&lt;/li&gt;
+  &lt;li&gt;Variabili built-in e variabili personalizzate&lt;/li&gt;
+  &lt;li&gt;Eventi&lt;/li&gt;
+  &lt;li&gt;Controlli condizionali&lt;/li&gt;
+  &lt;li&gt;Loop&lt;/li&gt;
+  &lt;li&gt;Funzioni personalizzate&lt;/li&gt;
+  &lt;li&gt;OOP: Programmazione Orientata agli Oggetti&lt;/li&gt;
+  &lt;li&gt;Array&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;modulo-2-generative-design-10-11-settembre&quot;&gt;Modulo 2: Generative Design (10-11 settembre)&lt;/h2&gt;
+&lt;p&gt;Tenuto da: &lt;strong&gt;Alka Cappellazzo&lt;/strong&gt;, &lt;strong&gt;location&lt;/strong&gt;: questo modulo si terrà presso &lt;a href=&quot;http://www.linosandco.com&quot;&gt;Lino’s and Co&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Attraverso un algoritmo e funzioni randomiche si possono generare forme, modelli e patterns unici. Il corso esplora l’affascinante mondo del Design generativo, dove il codice e l’inventiva si fondono per dare vita a incredibili composizioni. Infine, con le basi del linguaggio di programmazione Processing fornite durante il corso, i partecipanti sono in grado di creare degli originali patterns, in un contesto collaborativo e open source. A fine percorso è prevista la stampa digitale dei propri lavori con affiancato il codice che li ha generati.&lt;/p&gt;
+
+&lt;h2 id=&quot;argomenti-trattati-1&quot;&gt;Argomenti trattati&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Generative art for everyone, breve panoramica sull’arte generativa che miri a coinvolgere e motivare a partecipanti.&lt;/li&gt;
+  &lt;li&gt;Caos e funzioni matematiche, parte pratica, matematica e arte sono alla portata di tutti!&lt;/li&gt;
+  &lt;li&gt;Ritmo, ripetizione e pattern, i concetti chiave per sviluppare forme generative.&lt;/li&gt;
+  &lt;li&gt;Funzioni cos e sin&lt;/li&gt;
+  &lt;li&gt;Costanti PI&lt;/li&gt;
+  &lt;li&gt;La funzione random&lt;/li&gt;
+  &lt;li&gt;La funzione noise&lt;/li&gt;
+  &lt;li&gt;Creazione del proprio lavoro&lt;/li&gt;
+  &lt;li&gt;Stampa del progetto&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;modulo-3-data-visualization-17-18-settembre&quot;&gt;Modulo 3: Data Visualization (17-18 settembre)&lt;/h2&gt;
+&lt;p&gt;Tenuto da: &lt;strong&gt;Federico Pepe&lt;/strong&gt;, &lt;strong&gt;location&lt;/strong&gt;: questo modulo si terrà presso &lt;a href=&quot;http://www.izona.it&quot;&gt;Interzona&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nell’era dei Big Data chi fa informazione si deve scontrare con un nuovo problema: rendere chiari e fruibili la miriade di dati di cui disponiamo anche, e soprattutto, per spiegare fenomeni complessi. Excel è uno dei software più usati per l’analisi dei dati e, allo stesso tempo, uno dei programmi più lontani dal mondo del design. Grazie a Processing è possibile programmare il computer per acquisire, filtrare e organizzare grandi moli di dati per restituirne esempi graficamente facili da comprendere e analizzare.&lt;/p&gt;
+
+&lt;p&gt;Dopo aver affrontato i concetti di base di programmazione nel primo modulo, nel secondo i partecipanti verranno guidati nella realizzazione di una visualizzazione di dati. Il percorso prevede dapprima l’utilizzo di un database “statico” fornito dal docente; successivamente ai partecipanti verrà spiegato come raccogliere dati in tempo reale attraverso le API di varie piattaforme (ad esempio Twitter, Instagram, ecc…).&lt;/p&gt;
+
+&lt;h2 id=&quot;iscrizioni&quot;&gt;Iscrizioni&lt;/h2&gt;
+&lt;p&gt;Per iscriversi è necessario compilare il modulo a questo indirizzo: &lt;a href=&quot;http://bit.ly/WorkshopProcessingVR&quot;&gt;http://bit.ly/WorkshopProcessingVR&lt;/a&gt; e versare la quota di partecipazione a mezzo bonifico bancario.&lt;/p&gt;
+
+&lt;h3 id=&quot;costi&quot;&gt;Costi&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;€ 100,00 per un modulo&lt;/li&gt;
+  &lt;li&gt;€ 180,00 per due moduli&lt;/li&gt;
+  &lt;li&gt;€ 250, 00 per tre moduli.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTA&lt;/strong&gt;: Per frequentare il secondo e terzo modulo è necessario frequentare il primo o dimostrare di avere già una conoscenza di base di Processing.&lt;/p&gt;
+
+&lt;h3 id=&quot;il-workshop--realizzato-in-collaborazione-con&quot;&gt;Il workshop è realizzato in collaborazione con&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.png&quot; alt=&quot;Lino&#39;s and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.izona.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_interzona.jpg&quot; alt=&quot;Interzona&quot; height=&quot;50px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.png&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 20 Jul 2016 10:39:00 +0100</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</guid>
+        
+        <category>Processing</category>
+        
+        <category>Workshop</category>
+        
+        <category>Verona</category>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -46,3 +46,31 @@ $black: lighten($ultraBlack, 10%);
     color: red;
   }
 }
+
+// COLORS ANIMATION
+@keyframes background-change{
+  0% {
+    background: red;
+    color: $white;
+  }
+  20% {
+    background: orange;
+    color: $white;
+  }
+  40% {
+    background: green;
+    color: $white;
+  }
+  60% {
+    background: #4267ff;
+    color: $white;
+  }
+  80% {
+    background: violet;
+    color: $white;
+  }
+  100% {
+    background: red;
+    color: $white;
+  }
+}
