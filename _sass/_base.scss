@@ -10,7 +10,9 @@ body {
     height: 100%;
     font-size: 16px;
     overflow-x: hidden; /*sarebbe meglio correggere js*/
-    a:hover, h1, .active, a, a:visited, svg * , .title{
+    padding-bottom:3em;
+
+    a:hover, h1, .active, a, a:visited, svg * , .title, h5{
       -webkit-animation: color-change 30s infinite !important;
       -moz-animation: color-change 30s infinite !important;
       -o-animation: color-change 30s infinite !important;
@@ -19,19 +21,29 @@ body {
       font-weight: 100 !important;
     }
 
-    .navbar{
-      background:rgba($white, 0.9);
-
-    }
-
     h1, h2, h3, h4, h5, h6{
         font-family: $monserrat;
         line-height: 1.2em;
     }
 
-    .fullHeight{
-      padding: 7em 0;
+    .navbar{
+      background:rgba($white, 0.9);
+
     }
+
+    blockquote{
+      margin: 1em 0;
+      -webkit-animation: background-change 30s infinite !important;
+      -moz-animation: background-change 30s infinite !important;
+      -o-animation: background-change 30s infinite !important;
+      -ms-animation: background-change 30s infinite !important;
+      animation: background-change 30s infinite !important;
+      text-align: center;
+      footer{
+        color: $white;
+      }
+    }
+
     footer{
         ul.social {
             margin-top:2.5em;
@@ -41,7 +53,6 @@ body {
                 margin: 0 1em;
             }
         }
-        margin-bottom: 3em;
     }
 }
 
@@ -53,10 +64,6 @@ header {
   width: 100%;
   min-height: 700px;
   margin: 2em 0 3em;
-}
-
-footer {
-  margin-top: 70px;
 }
 
 .lead {
@@ -77,6 +84,12 @@ html, body{
 .navbar-collapse{
   margin-top: 1em;
 }
+
+.fullHeight{
+  padding: 7em 0;
+  border-top: 3px solid $ultraWhite; 
+}
+
 .miniNav{
   li{
     margin: 0 1em;

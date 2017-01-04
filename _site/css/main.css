@@ -6027,6 +6027,25 @@ button.close {
   100% {
     fill: red;
     color: red; } }
+@keyframes background-change {
+  0% {
+    background: red;
+    color: #f2f2f2; }
+  20% {
+    background: orange;
+    color: #f2f2f2; }
+  40% {
+    background: green;
+    color: #f2f2f2; }
+  60% {
+    background: #4267ff;
+    color: #f2f2f2; }
+  80% {
+    background: violet;
+    color: #f2f2f2; }
+  100% {
+    background: red;
+    color: #f2f2f2; } }
 /*
  * Media Queries
  * _base.scss       -> Extra small devices (phones, less than 768px)
@@ -6046,29 +6065,36 @@ body {
   height: 100%;
   font-size: 16px;
   overflow-x: hidden;
-  /*sarebbe meglio correggere js*/ }
-  body a:hover, body h1, body .active, body a, body a:visited, body svg *, body .title {
+  /*sarebbe meglio correggere js*/
+  padding-bottom: 3em; }
+  body a:hover, body h1, body .active, body a, body a:visited, body svg *, body .title, body h5 {
     -webkit-animation: color-change 30s infinite !important;
     -moz-animation: color-change 30s infinite !important;
     -o-animation: color-change 30s infinite !important;
     -ms-animation: color-change 30s infinite !important;
     animation: color-change 30s infinite !important;
     font-weight: 100 !important; }
-  body .navbar {
-    background: rgba(242, 242, 242, 0.9); }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: "Montserrat", sans-serif;
     line-height: 1.2em; }
-  body .fullHeight {
-    padding: 7em 0; }
-  body footer {
-    margin-bottom: 3em; }
-    body footer ul.social {
-      margin-top: 2.5em;
-      padding: 0; }
-      body footer ul.social li {
-        display: inline-block;
-        margin: 0 1em; }
+  body .navbar {
+    background: rgba(242, 242, 242, 0.9); }
+  body blockquote {
+    margin: 1em 0;
+    -webkit-animation: background-change 30s infinite !important;
+    -moz-animation: background-change 30s infinite !important;
+    -o-animation: background-change 30s infinite !important;
+    -ms-animation: background-change 30s infinite !important;
+    animation: background-change 30s infinite !important;
+    text-align: center; }
+    body blockquote footer {
+      color: #f2f2f2; }
+  body footer ul.social {
+    margin-top: 2.5em;
+    padding: 0; }
+    body footer ul.social li {
+      display: inline-block;
+      margin: 0 1em; }
 
 header {
   margin-bottom: 70px; }
@@ -6077,9 +6103,6 @@ header {
   width: 100%;
   min-height: 700px;
   margin: 2em 0 3em; }
-
-footer {
-  margin-top: 70px; }
 
 .lead {
   margin-bottom: 0.4em;
@@ -6096,6 +6119,10 @@ html, body {
 
 .navbar-collapse {
   margin-top: 1em; }
+
+.fullHeight {
+  padding: 7em 0;
+  border-top: 3px solid #fff; }
 
 .miniNav li {
   margin: 0 1em; }

@@ -5,8 +5,8 @@
     <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
     <link>https://codiceinutile.github.io/website-dev/</link>
     <atom:link href="https://codiceinutile.github.io/website-dev/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Jan 2017 14:22:40 +0000</pubDate>
-    <lastBuildDate>Mon, 02 Jan 2017 14:22:40 +0000</lastBuildDate>
+    <pubDate>Wed, 04 Jan 2017 13:42:40 +0000</pubDate>
+    <lastBuildDate>Wed, 04 Jan 2017 13:42:40 +0000</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -40,34 +40,102 @@
       </item>
     
       <item>
-        <title>Ma allora io le potrei dire anche con il rispetto per l&#39;autorità</title>
-        <description>&lt;p&gt;No, no.. non era troppo alto. Forse non ha capito.	Io dicevo che se fosse il coso di telefono, o il dito, come se fosse. Andando su o giù, giù o su. Mo basta insomma! Qui c’è gente che soffre per davvero, lo capite? Chiamo il medico di turno e domani ve la vedrete con il professore!&lt;/p&gt;
+        <title>Game Over &#39;16 Festival Milano</title>
+        <description>&lt;p&gt;La terza edizione del Game Over si conferma un incredibile ambiente di sviluppo per le più varie attività nell’ambito dell’arte digitale, dell’intrattenimento, e della cultura DIY.
+Quest’anno alcuni membri di Codice Inutile, già partecipi alle scorse edizioni e in contatto con gli organizzatori, hanno ideato e proposto al pubblico due attività. Proseguendo l’intento di diffusione del Codice Creativo su una vie parallela ai workshop di Processing a Verona, con un format adatto ai tempi e al pubblico dell’occasione.
+Tutto ciò in stretta collaborazione con il &lt;a href=&quot;https://www.poul.org/&quot;&gt;Polimi Unix Lab&lt;/a&gt; che ci ha fornito attrezzatura e supporto tecnico per realizzare il progetto, oltre che condividere questa esperienza per i due giorni del festival.&lt;/p&gt;
 
-&lt;p&gt;Come se fosse antani anche per lei soltanto in due, oppure in quattro anche scribai con cofandina; come antifurto, per esempio. Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Ma che antifurto, mi faccia il piacere! Questi signori qui stavano sonando loro.&lt;/p&gt;
+&lt;p&gt;Un’occasione preziosa per conoscere realtà nazionali affini, scambiare idee e progettare collaborazioni, portare avanti il nostro obbiettivo principale che è costruire una rete nazionale e multidisciplinare con cui promuovere la cultura del Codice Creativo e interfacciarsi con le scene estere.&lt;/p&gt;
 
-&lt;p&gt;Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Segua col dito. Vede, se va giù non va su. Se va su non va giù. Si faccia aiutare dalla suora. È quello che stavo dicendo, no!? Si, ma la sbiriguda della sbrindellona come se fosse antani come faceva? Prego? Ho provato con la supercazzola con scappelamento paraplegico a sinistra, ma non funzionava. Ma allora io le potrei dire anche con il rispetto per l’autorità, che anche soltanto le due cose come vice-sindaco, capisce? Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni.&lt;/p&gt;
+&lt;h2 id=&quot;glitch-the-logo---push-information-disorder-into-brand-identity&quot;&gt;Glitch the Logo - Push Information disorder into brand identity&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Ideato da Alberto Massa&lt;/em&gt;
+&lt;em&gt;con Lorenzo Banfi e Matteo Testa.&lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“glitch art is often aestheticized and fetishized technological
+[human] errors or anticipated accidents that can produce
+unintended [desired] results.” a. britz&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La Glitch Art è una corrente e un’insieme di tecniche artistiche esistenti da diversi decenni ma che sempre più negli ultimi anni si sta guadagnando spazio, fuori dagli ambienti d’avanguardia fino alla cultura mainstream come parte di produzioni di arte, design e intrattenimento.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/glitch1.png&quot; alt=&quot;Analog Glitch&quot; class=&quot;img-responsive&quot; /&gt;
+Paik-Nam June, 1965&lt;/p&gt;
+
+&lt;p&gt;Un semplice principio: valorizzare l’errore o il disturbo di un sistema, come uno schermo o un circuito audio, portato ai limiti del funzionamento previsto dai costruttori.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/glitch2.png&quot; alt=&quot;Neural network&quot; class=&quot;img-responsive&quot; /&gt;
+Deep Dream, 2015&lt;/p&gt;
+
+&lt;p&gt;Una sterminata varietà di pratiche come il databending, la manipolazione dei formati o la corruzione automatica del codice esadecimale.&lt;/p&gt;
+
+&lt;p&gt;Ecco l’idea di organizzare un workshop che aprisse una panoramica ampia delle pratiche esistenti dalle più semplici ad alcune esoteriche, per metterle subito in pratica, l’unico modo per imparare in un campo dove esistono solo modi per sbagliare e nessuna regola.
+un secondo momento è stato dedicato al confronto, lo scambio di visioni e consigli fra i partecipanti, che è l’anima di Codice Inutile.&lt;/p&gt;
+
+&lt;h3 id=&quot;temi-trattati&quot;&gt;Temi trattati&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Reinterpretazione&lt;/li&gt;
+  &lt;li&gt;Errore forzato&lt;/li&gt;
+  &lt;li&gt;Modifiche arbitrarie&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hands-on&quot;&gt;Hands on**&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Zalgo&lt;/li&gt;
+  &lt;li&gt;Hex Corruption&lt;/li&gt;
+  &lt;li&gt;Audio Filter on image&lt;/li&gt;
+  &lt;li&gt;Random Char Substitution
+    &lt;ul&gt;
+      &lt;li&gt;Immagine&lt;/li&gt;
+      &lt;li&gt;Gif animata&lt;/li&gt;
+      &lt;li&gt;3D Mesh&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/glitch3.bmp&quot; alt=&quot;Audio Filter&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;/images/posts/glitch4.bmp&quot; alt=&quot;Format&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;/images/posts/glitch5.jpg&quot; alt=&quot;Hex Corruption&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;shader-contest---embrace-the-fragment&quot;&gt;Shader Contest - Embrace the Fragment&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Condotto e organizzato da Edoardo Negri, Lorenzo Banfi, Matteo Testa.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Durante il secondo giorno di festival abbiamo organizzato un Contest per portare l’affascinante mondo degli Shader al pubblico con un focus particolare sull’uso per il live/creative coding.
+Questo progetto nasce da una ricerca in corso nel collettivo come presentazione e benchmark in vista di una serie di workshop durante le serate di &lt;a href=&quot;https://www.facebook.com/groups/1541449069410868/&quot;&gt;Milano Live Coding&lt;/a&gt; presso &lt;a href=&quot;https://www.facebook.com/wemake.cc/?fref=ts&quot;&gt;weMake&lt;/a&gt;.
+Un esperimento oltre il nostro consueto format workshops+talk per superare la barriera di accesso di questa tecnologia coinvolgendo il pubblico con un progetto collaborativo aperto, e offrendo assistenza per muovere i primi passi.&lt;/p&gt;
+
+&lt;h3 id=&quot;shader&quot;&gt;Shader&lt;/h3&gt;
+
+&lt;p&gt;Gli shader sono codici eseguiti dalla scheda grafica durante la fase di rendering delle immagini. A differenza di altri sistemi di programmazione per la grafica risulta estremamente efficiente, per l’uso di diretto dell’hardware senza passare dalla cpu del computer che non è dedicata alle operazioni grafiche.
+Al prezzo di una maggiore difficoltà di sviluppo, rispetto ad esempio a &lt;a href=&quot;https://processing.org/&quot;&gt;Processing&lt;/a&gt;, e per le logiche a basso livello specifiche del linguaggio GLSL che si basano sul funzionamento del motore grafico &lt;a href=&quot;https://www.opengl.org/&quot;&gt;OpenGL&lt;/a&gt;.
+La potenza e la flessibiltà di OpenGL ne fanno lo strumento ideale per sviluppare grafiche, ambienti 3D interattivi per applicazioni online con &lt;a href=&quot;https://www.chromeexperiments.com/webgl&quot;&gt;WebGL&lt;/a&gt; e per installazioni o performance artistiche.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go4.PNG&quot; alt=&quot;Shader Example&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;attivit&quot;&gt;Attività&lt;/h3&gt;
+
+&lt;p&gt;Allo stand di Codice Inutile è stata resa disponibile una piattaforma per collegarsi e produrre shaders che venivano proiettati in diretta sulla parete di fronte, attirando l’attenzione delle persone di passaggio con le opere work in progress e su chi partecipava all’attività.
+Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collegarsi per utilizzare l’editor live &lt;a href=&quot;http://mrdoob.com/projects/glsl_sandbox/&quot;&gt;glslViewer&lt;/a&gt; di &lt;a href=&quot;https://github.com/mrdoob&quot;&gt;mr.Doob&lt;/a&gt; o per visualizzare gli shaders esistenti come punto di partenza per i propri. Nel server si è raccolto così in diretta un archivio di esempi su cui sperimentare che documenta il lavoro collettivo del pomeriggio.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go3.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go2.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/go1.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 21 Sep 2016 10:39:00 +0100</pubDate>
-        <link>https://codiceinutile.github.io/website-dev/news/2016/09/21/lorem_ipsum.html</link>
-        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/21/lorem_ipsum.html</guid>
+        <pubDate>Sat, 24 Sep 2016 21:00:00 +0100</pubDate>
+        <link>https://codiceinutile.github.io/website-dev/news/2016/09/24/gameover-milano.html</link>
+        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/24/gameover-milano.html</guid>
         
+        <category>GameOver</category>
         
-        <category>news</category>
+        <category>Shader Contest</category>
         
-      </item>
-    
-      <item>
-        <title>Faceva Du-Du! In che senso? Nel senso anafestico! </title>
-        <description>&lt;p&gt;Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Segua col dito. Vede, se va giù non va su. Se va su non va giù. Si faccia aiutare dalla suora. È quello che stavo dicendo, no!?&lt;/p&gt;
-
-&lt;p&gt;Si, ma la sbiriguda della sbrindellona come se fosse antani come faceva? Prego? Ho provato con la supercazzola con scappelamento paraplegico a sinistra, ma non funzionava. Ma allora io le potrei dire anche con il rispetto per l’autorità, che anche soltanto le due cose come vice-sindaco, capisce? Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni.&lt;/p&gt;
-
-&lt;p&gt;No, no.. non era troppo alto. Forse non ha capito.	Io dicevo che se fosse il coso di telefono, o il dito, come se fosse. Andando su o giù, giù o su. Mo basta insomma! Qui c’è gente che soffre per davvero, lo capite? Chiamo il medico di turno e domani ve la vedrete con il professore! Come se fosse antani anche per lei soltanto in due, oppure in quattro anche scribai con cofandina; come antifurto, per esempio. Ho capito. Tre applicazioni di afasol, di un’ora l’una. Subito! Che c’è? Ehm.. blinda la supercazzola con scappellamento a sinistra e a destra come se fossero dei pentoloni. Ma che antifurto, mi faccia il piacere! Questi signori qui stavano sonando loro.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 20 Sep 2016 10:39:00 +0100</pubDate>
-        <link>https://codiceinutile.github.io/website-dev/news/2016/09/20/lorem_ipsum.html</link>
-        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/20/lorem_ipsum.html</guid>
+        <category>Glitch Art</category>
+        
+        <category>Workshop</category>
+        
+        <category>Milano</category>
         
         
         <category>news</category>
@@ -93,7 +161,7 @@ No, io, scusi noi siamo in quattro.&lt;/p&gt;
       </item>
     
       <item>
-        <title>Workshop Creative Coding a settembre (Verona)</title>
+        <title>Workshop Creative Coding a Verona</title>
         <description>&lt;p&gt;Partiamo da un presupposto: tutti possono imparare a programmare. La domanda che sorge spontanea, però, è: perché dovresti farlo? Nell’immaginario comune i programmatori sono dei nerd chiusi in stanze buie che fanno un lavoro noioso; imparare a programmare, però, significa acquisire una metodologia di pensiero e di risoluzione di problemi che può tornare utile anche nella vita quotidiana oltre a competenze sempre più richieste nel mondo del lavoro. In particolare, quando si rientra nell’ambito del creative coding la programmazione può essere utilizzata come mezzo per esprimersi creativamente.&lt;/p&gt;
 
 &lt;p&gt;Lo scopo di questo workshop, suddiviso in tre moduli, è quello di offrire una conoscenza di base del linguaggio di programmazione Processing e sviluppare dei progetti di arte generativa e di data visualization.&lt;/p&gt;
@@ -156,9 +224,9 @@ No, io, scusi noi siamo in quattro.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;NOTA&lt;/strong&gt;: Per frequentare il secondo e terzo modulo è necessario frequentare il primo o dimostrare di avere già una conoscenza di base di Processing.&lt;/p&gt;
 
 &lt;h3 id=&quot;il-workshop--realizzato-in-collaborazione-con&quot;&gt;Il workshop è realizzato in collaborazione con&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.jpg&quot; alt=&quot;Lino&#39;s and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.png&quot; alt=&quot;Lino&#39;s and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.izona.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_interzona.jpg&quot; alt=&quot;Interzona&quot; height=&quot;50px&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.jpg&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.png&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jul 2016 10:39:00 +0100</pubDate>
