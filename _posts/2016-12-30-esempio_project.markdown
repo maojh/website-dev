@@ -12,8 +12,6 @@ includes:
 href: test_1.js
 date: 2016-12-30 10:39:00 +0100
 ---
-# Hypnotic lines
-
 Uno studio sulle funzioni pushMatrix() e popMatrix() realizzato in Processing e portato su p5.js.
 
 {% highlight javascript %}
