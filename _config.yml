@@ -47,3 +47,4 @@ markdown: kramdown
 # SEO
 gems:
   - jekyll-seo-tag
+  - liquid-md5
