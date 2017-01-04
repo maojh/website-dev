@@ -4,7 +4,7 @@ layout: default
 <div class="container" id="meetup">
   <div class="row page-title">
     <div class="col-xs-12">
-      <h1>Meetup</h1>
+      <h1>Circoli Inutili</h1>
     </div>
   </div>
   <div class="row">
@@ -15,8 +15,8 @@ layout: default
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <p class="lead">Portare il Creative Coding nelle citt&agrave;. Favorire l'incontro, lo scambio e la condivisione. Organizzazione di eventi, gruppi di studio e ricerca in tutte le citt&agrave; italiane.</p>
-      <p>Vuoi creare un <strong>Meetup</strong> nella tua citt&agrave;? Scrivici!</p>
+      <p class="lead">I Circoli Inutili sono stati pensati per portare il creative coding sul territorio favorendo l'incontro, lo scambio e la condivisione.</p>
+      <p>Vuoi organizzare un evento, un gruppo di studio e ricerca o altro nella tua citt&agrave;? Scrivici!</p>
     </div>
     {% for meetup in site.meetup %}
     <div class="col-xs-12 col-sm-4">
@@ -37,6 +37,7 @@ layout: default
   function initMap() {
     var rome = {lat: 41.902783, lng: 12.496366};
     var map = new google.maps.Map(document.getElementById('map'), {
+      scrollwheel: false,
       zoom: 6,
       center: rome
     });
