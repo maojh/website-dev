@@ -15,7 +15,6 @@ layout: default
   <div class="row">
     {% for person in site.people %}
     <div class="col-xs-4 single-people text-center">
-      <img src="http://gravatar.com/avatar/{{ person.email | downcase | md5 }}?s=100" />
       <h2 class="text-center"><a href="{{ person.url }}">{{ person.title }}</a></h2>
     </div>
     {% endfor %}
