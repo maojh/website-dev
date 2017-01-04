@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "This should display squares"
+title:  "Hypnotic Lines"
 categories: project
 author: Federico Pepe
 description: Un progetto di Federico Pepe
@@ -12,6 +12,6 @@ includes:
 href: test_1.js
 date:   2016-12-30 10:39:00 +0100
 ---
-# This should display circles
+# Hypnotic Lines
 
 Questo è il testo di spiegazione
