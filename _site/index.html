@@ -224,7 +224,7 @@ $(document).ready(function() {
 
   // Load the content dinamically
 
-  $.getJSON('http://localhost:4000/homepage.json', data => {
+  $.getJSON('http://localhost:4000/homepage.json', function(data) {
     if (!data.length)  return $title.html('Error: the JSON array is empty');
 
     $.ajaxSetup({ cache: true });
@@ -233,7 +233,9 @@ $(document).ready(function() {
     json = data, actions();
     $('#jsRefresh').click(actions);
   })
-   .fail(() => $title.html('Error: unable to load JSON'));
+   .fail(function() {
+     $title.html('Error: unable to load JSON'));
+   }
 
   function pickAnotherItem() {
     if (json.length === 1)  return item = json[1];
