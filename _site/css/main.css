@@ -6086,7 +6086,8 @@ body {
     -o-animation: background-change 30s infinite !important;
     -ms-animation: background-change 30s infinite !important;
     animation: background-change 30s infinite !important;
-    text-align: center; }
+    text-align: center;
+    border: 0; }
     body blockquote footer {
       color: #f2f2f2; }
   body footer ul.social {
