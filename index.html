@@ -129,7 +129,7 @@ $(document).ready(function() {
   })
    .fail(function() {
      $title.html('Error: unable to load JSON');
-   }
+   });
 
   function pickAnotherItem() {
     if (json.length === 1)  return item = json[1];
