@@ -217,7 +217,7 @@ $(document).ready(function() {
   const $loading = $('#loading'),
         $title = $('.item-title'),
         $descript = $('.item-description'),
-        actions = () => (pickAnotherItem(), loadScripts()),
+        actions = function() { pickAnotherItem(), loadScripts() },
         intRandom = (n = 2) => n * Math.random() | 0;
 
   let json, item, idx, scripts;
