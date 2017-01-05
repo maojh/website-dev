@@ -32,3 +32,8 @@ function draw() {
 
   theta += 0.1;
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  background(20);
+}
