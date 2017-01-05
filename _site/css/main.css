@@ -6074,8 +6074,9 @@ body {
     -ms-animation: color-change 30s infinite !important;
     animation: color-change 30s infinite !important;
     font-weight: 100 !important; }
+  body h1, body h2, body h3, body h4, body h6 {
+    font-family: "Montserrat", sans-serif; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
-    font-family: "Montserrat", sans-serif;
     line-height: 1.2em; }
   body .navbar {
     background: rgba(242, 242, 242, 0.9); }
@@ -6121,9 +6122,11 @@ html, body {
 .navbar-collapse {
   margin-top: 1em; }
 
-.fullHeight {
-  padding: 7em 0;
-  border-top: 3px solid #fff; }
+.rowPadding {
+  padding: 30px;
+  border-top: 3px dotted #fff; }
+  .rowPadding:first-child {
+    padding-top: 7em; }
 
 .miniNav li {
   margin: 0 1em; }
@@ -6155,8 +6158,9 @@ html, body {
 .title {
   background: #1a1a1a;
   position: absolute;
-  right: 1em;
-  bottom: 1em;
+  margin: 1em;
+  bottom: 0;
+  right: 0;
   text-align: left;
   /*&:hover{
     font-size: 31px;
@@ -6165,7 +6169,9 @@ html, body {
     list-style: none;
     padding: 0;
     float: left;
-    margin: 1em 0 1em 1em; }
+    margin: 1em 0 1em 1em;
+    opacity: 0;
+    position: absolute; }
     .title ul li {
       font-weight: lighter; }
   .title svg {
@@ -6182,12 +6188,29 @@ html, body {
   display: block;
   background: url("/images/spinner.gif") center no-repeat; }
 
+/*
+ * Media Queries
+ * Small Devices: tablets, 768px and up
+ *
+*/
+@media only screen and (min-width: 768px) {
+  body .title ul {
+    opacity: 1;
+    position: relative; }
+  body .rowPadding {
+    padding: 3em 0; } }
 @media (min-width: 768px) {
   /*
    * Media Queries
    * Small Devices: tablets, 768px and up
    *
   */ }
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  body .title ul {
+    opacity: 1;
+    position: relative; }
+  body .rowPadding {
+    padding: 3em 0; } }
 @media (min-width: 992px) {
   /*
    * Media Queries
