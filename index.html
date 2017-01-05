@@ -133,9 +133,9 @@ $(document).ready(function() {
 
   function pickAnotherItem() {
     if (json.length === 1)  return item = json[1];
-    var rand = Math.floor(Math.random() * json.length);
-    //for (var rnd; (rnd = intRandom(json.length)) === idx; );
-    return item = json[idx = rand];
+    //var rand = Math.floor(Math.random() * json.length);
+    for (var rnd; (rnd = Math.floor(Math.random() * json.length)) === idx; );
+    return item = json[idx = rnd];
   }
 
   function loadScripts() {

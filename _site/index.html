@@ -4,7 +4,8 @@
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
   <!-- FAVICON -->
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -239,9 +240,9 @@ $(document).ready(function() {
 
   function pickAnotherItem() {
     if (json.length === 1)  return item = json[1];
-    var rand = Math.floor(Math.random() * json.length);
-    //for (var rnd; (rnd = intRandom(json.length)) === idx; );
-    return item = json[idx = rand];
+    //var rand = Math.floor(Math.random() * json.length);
+    for (var rnd; (rnd = Math.floor(Math.random() * json.length)) === idx; );
+    return item = json[idx = rnd];
   }
 
   function loadScripts() {
