@@ -23,13 +23,11 @@ body {
       font-weight: 100 !important;
     }
 
-    h1, h2, h3, h4, h6{
+    h1, h2, h3, h4, h5, h6{
         font-family: $monserrat;
+        line-height: 1.2em;
     }
 
-    h1, h2, h3, h4, h5, h6{
-      line-height: 1.2em;
-    }
 
     .navbar{
       background:rgba($white, 0.9);
@@ -96,7 +94,7 @@ html, body{
   border-top: 3px dotted $ultraWhite; 
     &:first-child{
       padding-top:7em;
-    }
+        }
 }
 
 .miniNav{
