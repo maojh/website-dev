@@ -5,7 +5,7 @@
      "author"       : "Matteo Testa",
      "description"  : "Un progetto di Matteo Testa",
      "url"         : "/project/2016/12/30/esempio_project_matteo.html",
-     "href"         : "https://codiceinutile.github.io/website-dev/js/projects/matteo.js",
+     "href"         : "http://localhost:4000/js/projects/matteo.js",
      
      "includes"     : [
        
@@ -21,11 +21,11 @@
    ,
    
    {
-     "title"        : "This should display squares",
+     "title"        : "Hypnotic lines",
      "author"       : "Federico Pepe",
      "description"  : "Un progetto di Federico Pepe",
      "url"         : "/project/2016/12/30/esempio_project.html",
-     "href"         : "https://codiceinutile.github.io/website-dev/js/projects/test_1.js",
+     "href"         : "http://localhost:4000/js/projects/test_1.js",
      
      "includes"     : [
        
