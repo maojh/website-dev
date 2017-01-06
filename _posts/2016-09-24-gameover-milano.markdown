@@ -5,7 +5,7 @@ date:   2016-09-24 21:00:00 +0100
 excerpt: "Codice Inutile è stato presente con GlitchArt workshop e Shader contest aperto al Game Over Milano Festival del Videogioco Indie tenuto nel c.s.o.a Leoncavallo."
 # image:
 categories: news
-author: Matteo Testa
+author: maojh
 tags: ["GameOver","Shader Contest","Glitch Art","Workshop", "Milano"]
 ---
 La terza edizione del Game Over si conferma un incredibile ambiente di sviluppo per le più varie attività nell'ambito dell'arte digitale, dell'intrattenimento, e della cultura DIY.

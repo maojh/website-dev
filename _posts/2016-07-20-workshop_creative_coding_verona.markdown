@@ -5,7 +5,7 @@ date:   2016-07-20 10:39:00 +0100
 excerpt: "A settembre 2016 Codice Inutile terrà un workshop di Creative Coding a Verona utilizzando Processing. Il workshop è suddiviso in 3 moduli: Processing Base (3-4 settembre), Generative Art (10-11 settembre) e Data Visualization (17-18 settembre)"
 image: /images/posts/workshop_linos.jpg
 categories: news
-author: Federico Pepe
+author: fedpep
 tags: ["Processing", "Workshop", "Verona"]
 ---
 Partiamo da un presupposto: tutti possono imparare a programmare. La domanda che sorge spontanea, per&ograve;, è: perché dovresti farlo? Nell'immaginario comune i programmatori sono dei nerd chiusi in stanze buie che fanno un lavoro noioso; imparare a programmare, però, significa acquisire una metodologia di pensiero e di risoluzione di problemi che può tornare utile anche nella vita quotidiana oltre a competenze sempre più richieste nel mondo del lavoro. In particolare, quando si rientra nell'ambito del creative coding la programmazione può essere utilizzata come mezzo per esprimersi creativamente.
