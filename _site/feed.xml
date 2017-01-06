@@ -5,8 +5,8 @@
     <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
     <link>http://localhost:4000/website-dev/</link>
     <atom:link href="http://localhost:4000/website-dev/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Jan 2017 20:23:16 +0100</pubDate>
-    <lastBuildDate>Fri, 06 Jan 2017 20:23:16 +0100</lastBuildDate>
+    <pubDate>Fri, 06 Jan 2017 20:25:55 +0100</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 20:25:55 +0100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -98,12 +98,12 @@ unintended [desired] results.” a. britz&lt;/p&gt;
 
 &lt;p&gt;La Glitch Art è una corrente e un’insieme di tecniche artistiche esistenti da diversi decenni ma che sempre più negli ultimi anni si sta guadagnando spazio, fuori dagli ambienti d’avanguardia fino alla cultura mainstream come parte di produzioni di arte, design e intrattenimento.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/glitch1.png&quot; alt=&quot;Analog Glitch&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/glitch1.png&quot; alt=&quot;Analog Glitch&quot; class=&quot;img-responsive&quot; /&gt;
 Paik-Nam June, 1965&lt;/p&gt;
 
 &lt;p&gt;Un semplice principio: valorizzare l’errore o il disturbo di un sistema, come uno schermo o un circuito audio, portato ai limiti del funzionamento previsto dai costruttori.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/glitch2.png&quot; alt=&quot;Neural network&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/glitch2.png&quot; alt=&quot;Neural network&quot; class=&quot;img-responsive&quot; /&gt;
 Deep Dream, 2015&lt;/p&gt;
 
 &lt;p&gt;Una sterminata varietà di pratiche come il databending, la manipolazione dei formati o la corruzione automatica del codice esadecimale.&lt;/p&gt;
@@ -132,9 +132,9 @@ un secondo momento è stato dedicato al confronto, lo scambio di visioni e consi
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/glitch3.bmp&quot; alt=&quot;Audio Filter&quot; class=&quot;img-responsive&quot; /&gt;
-&lt;img src=&quot;/images/posts/glitch4.bmp&quot; alt=&quot;Format&quot; class=&quot;img-responsive&quot; /&gt;
-&lt;img src=&quot;/images/posts/glitch5.jpg&quot; alt=&quot;Hex Corruption&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/glitch3.bmp&quot; alt=&quot;Audio Filter&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000/images/posts/glitch4.bmp&quot; alt=&quot;Format&quot; class=&quot;img-responsive&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000/images/posts/glitch5.jpg&quot; alt=&quot;Hex Corruption&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;shader-contest---embrace-the-fragment&quot;&gt;Shader Contest - Embrace the Fragment&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Condotto e organizzato da Edoardo Negri, Lorenzo Banfi, Matteo Testa.&lt;/em&gt;&lt;/p&gt;
@@ -149,18 +149,18 @@ Un esperimento oltre il nostro consueto format workshops+talk per superare la ba
 Al prezzo di una maggiore difficoltà di sviluppo, rispetto ad esempio a &lt;a href=&quot;https://processing.org/&quot;&gt;Processing&lt;/a&gt;, e per le logiche a basso livello specifiche del linguaggio GLSL che si basano sul funzionamento del motore grafico &lt;a href=&quot;https://www.opengl.org/&quot;&gt;OpenGL&lt;/a&gt;.
 La potenza e la flessibiltà di OpenGL ne fanno lo strumento ideale per sviluppare grafiche, ambienti 3D interattivi per applicazioni online con &lt;a href=&quot;https://www.chromeexperiments.com/webgl&quot;&gt;WebGL&lt;/a&gt; e per installazioni o performance artistiche.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/go4.PNG&quot; alt=&quot;Shader Example&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/go4.PNG&quot; alt=&quot;Shader Example&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;attivit&quot;&gt;Attività&lt;/h3&gt;
 
 &lt;p&gt;Allo stand di Codice Inutile è stata resa disponibile una piattaforma per collegarsi e produrre shaders che venivano proiettati in diretta sulla parete di fronte, attirando l’attenzione delle persone di passaggio con le opere work in progress e su chi partecipava all’attività.
 Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collegarsi per utilizzare l’editor live &lt;a href=&quot;http://mrdoob.com/projects/glsl_sandbox/&quot;&gt;glslViewer&lt;/a&gt; di &lt;a href=&quot;https://github.com/mrdoob&quot;&gt;mr.Doob&lt;/a&gt; o per visualizzare gli shaders esistenti come punto di partenza per i propri. Nel server si è raccolto così in diretta un archivio di esempi su cui sperimentare che documenta il lavoro collettivo del pomeriggio.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/go3.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/go3.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/go2.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/go2.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/go1.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/images/posts/go1.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Sep 2016 22:00:00 +0200</pubDate>
         <link>http://localhost:4000/website-dev/news/2016/09/24/gameover-milano.html</link>
