@@ -3,10 +3,10 @@
   <channel>
     <title>Codice Inutile</title>
     <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Jan 2017 20:21:21 +0100</pubDate>
-    <lastBuildDate>Fri, 06 Jan 2017 20:21:21 +0100</lastBuildDate>
+    <link>http://localhost:4000/website-dev/</link>
+    <atom:link href="http://localhost:4000/website-dev/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 06 Jan 2017 20:23:16 +0100</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 20:23:16 +0100</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -16,8 +16,8 @@
 &lt;p&gt;Questo è il testo di spiegazione&lt;/p&gt;
 </description>
         <pubDate>Fri, 30 Dec 2016 10:40:00 +0100</pubDate>
-        <link>http://localhost:4000/project/2016/12/30/esempio_project_matteo.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/2016/12/30/esempio_project_matteo.html</guid>
+        <link>http://localhost:4000/website-dev/project/2016/12/30/esempio_project_matteo.html</link>
+        <guid isPermaLink="true">http://localhost:4000/website-dev/project/2016/12/30/esempio_project_matteo.html</guid>
         
         
         <category>project</category>
@@ -70,8 +70,8 @@
 
 </description>
         <pubDate>Fri, 30 Dec 2016 10:39:00 +0100</pubDate>
-        <link>http://localhost:4000/project/2016/12/30/esempio_project.html</link>
-        <guid isPermaLink="true">http://localhost:4000/project/2016/12/30/esempio_project.html</guid>
+        <link>http://localhost:4000/website-dev/project/2016/12/30/esempio_project.html</link>
+        <guid isPermaLink="true">http://localhost:4000/website-dev/project/2016/12/30/esempio_project.html</guid>
         
         
         <category>project</category>
@@ -163,8 +163,8 @@ Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collega
 &lt;p&gt;&lt;img src=&quot;/images/posts/go1.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 24 Sep 2016 22:00:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/09/24/gameover-milano.html</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/09/24/gameover-milano.html</guid>
+        <link>http://localhost:4000/website-dev/news/2016/09/24/gameover-milano.html</link>
+        <guid isPermaLink="true">http://localhost:4000/website-dev/news/2016/09/24/gameover-milano.html</guid>
         
         <category>GameOver</category>
         
@@ -251,8 +251,8 @@ Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collega
 &lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 20 Jul 2016 11:39:00 +0200</pubDate>
-        <link>http://localhost:4000/news/2016/07/20/workshop_creative_coding_verona.html</link>
-        <guid isPermaLink="true">http://localhost:4000/news/2016/07/20/workshop_creative_coding_verona.html</guid>
+        <link>http://localhost:4000/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</link>
+        <guid isPermaLink="true">http://localhost:4000/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</guid>
         
         <category>Processing</category>
         
