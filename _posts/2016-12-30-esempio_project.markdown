@@ -3,6 +3,7 @@ layout: post
 title:  "Hypnotic lines"
 categories: project
 author: Federico Pepe
+username: fedpep
 description: Un progetto di Federico Pepe
 # List all the libraries needed to load your script
 includes:
