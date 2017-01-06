@@ -91,7 +91,7 @@ html, body{
 
 .rowPadding{
   padding: 30px;
-  border-top: 3px dotted $ultraWhite; 
+  border-top: 3px dotted $ultraWhite;
     &:first-child{
       padding-top:7em;
         }
@@ -171,6 +171,3 @@ html, body{
   display: block;
   background: url('/images/spinner.gif') center no-repeat;
 }
-
-
-@import "_screen_sm";

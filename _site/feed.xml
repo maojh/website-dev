@@ -3,11 +3,11 @@
   <channel>
     <title>Codice Inutile</title>
     <description>Codice Inutile &amp;egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&amp;agrave; del codice.</description>
-    <link>https://codiceinutile.github.io/website-dev/</link>
-    <atom:link href="https://codiceinutile.github.io/website-dev/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jan 2017 13:04:59 +0000</pubDate>
-    <lastBuildDate>Thu, 05 Jan 2017 13:04:59 +0000</lastBuildDate>
-    <generator>Jekyll v3.1.6</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 06 Jan 2017 20:34:11 +0100</pubDate>
+    <lastBuildDate>Fri, 06 Jan 2017 20:34:11 +0100</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Pixel Dawn</title>
@@ -15,9 +15,9 @@
 
 &lt;p&gt;Questo è il testo di spiegazione&lt;/p&gt;
 </description>
-        <pubDate>Fri, 30 Dec 2016 09:40:00 +0000</pubDate>
-        <link>https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project_matteo.html</link>
-        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project_matteo.html</guid>
+        <pubDate>Fri, 30 Dec 2016 10:40:00 +0100</pubDate>
+        <link>http://localhost:4000/project/2016/12/30/esempio_project_matteo.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/2016/12/30/esempio_project_matteo.html</guid>
         
         
         <category>project</category>
@@ -33,7 +33,7 @@
 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myCanvas&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;windowWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;windowHeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;myCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;myContainer&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;myCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'myContainer'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
   &lt;span class=&quot;nx&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
@@ -69,9 +69,9 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-        <pubDate>Fri, 30 Dec 2016 09:39:00 +0000</pubDate>
-        <link>https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project.html</link>
-        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/project/2016/12/30/esempio_project.html</guid>
+        <pubDate>Fri, 30 Dec 2016 10:39:00 +0100</pubDate>
+        <link>http://localhost:4000/project/2016/12/30/esempio_project.html</link>
+        <guid isPermaLink="true">http://localhost:4000/project/2016/12/30/esempio_project.html</guid>
         
         
         <category>project</category>
@@ -79,7 +79,7 @@
       </item>
     
       <item>
-        <title>Game Over &#39;16 Festival Milano</title>
+        <title>Game Over '16 Festival Milano</title>
         <description>&lt;p&gt;La terza edizione del Game Over si conferma un incredibile ambiente di sviluppo per le più varie attività nell’ambito dell’arte digitale, dell’intrattenimento, e della cultura DIY.
 Quest’anno alcuni membri di Codice Inutile, già partecipi alle scorse edizioni e in contatto con gli organizzatori, hanno ideato e proposto al pubblico due attività. Proseguendo l’intento di diffusione del Codice Creativo su una vie parallela ai workshop di Processing a Verona, con un format adatto ai tempi e al pubblico dell’occasione.
 Tutto ciò in stretta collaborazione con il &lt;a href=&quot;https://www.poul.org/&quot;&gt;Polimi Unix Lab&lt;/a&gt; che ci ha fornito attrezzatura e supporto tecnico per realizzare il progetto, oltre che condividere questa esperienza per i due giorni del festival.&lt;/p&gt;
@@ -162,9 +162,9 @@ Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collega
 
 &lt;p&gt;&lt;img src=&quot;/images/posts/go1.jpg&quot; alt=&quot;postazione&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sat, 24 Sep 2016 21:00:00 +0100</pubDate>
-        <link>https://codiceinutile.github.io/website-dev/news/2016/09/24/gameover-milano.html</link>
-        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/09/24/gameover-milano.html</guid>
+        <pubDate>Sat, 24 Sep 2016 22:00:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/09/24/gameover-milano.html</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/09/24/gameover-milano.html</guid>
         
         <category>GameOver</category>
         
@@ -245,14 +245,14 @@ Abbiamo allestito una rete wifi su un server locale a cui tutti potevano collega
 &lt;p&gt;&lt;strong&gt;NOTA&lt;/strong&gt;: Per frequentare il secondo e terzo modulo è necessario frequentare il primo o dimostrare di avere già una conoscenza di base di Processing.&lt;/p&gt;
 
 &lt;h3 id=&quot;il-workshop--realizzato-in-collaborazione-con&quot;&gt;Il workshop è realizzato in collaborazione con&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.png&quot; alt=&quot;Lino&#39;s and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.linosandco.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_linos.png&quot; alt=&quot;Lino's and Co&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.izona.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_interzona.jpg&quot; alt=&quot;Interzona&quot; height=&quot;50px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.311verona.com&quot;&gt;&lt;img src=&quot;/images/posts/logo_311.png&quot; alt=&quot;311 Verona&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;http://www.veronafablab.it&quot;&gt;&lt;img src=&quot;/images/posts/logo_veronafablab.png&quot; alt=&quot;Verona Fab Lab&quot; height=&quot;100px&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-        <pubDate>Wed, 20 Jul 2016 10:39:00 +0100</pubDate>
-        <link>https://codiceinutile.github.io/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</link>
-        <guid isPermaLink="true">https://codiceinutile.github.io/website-dev/news/2016/07/20/workshop_creative_coding_verona.html</guid>
+        <pubDate>Wed, 20 Jul 2016 11:39:00 +0200</pubDate>
+        <link>http://localhost:4000/news/2016/07/20/workshop_creative_coding_verona.html</link>
+        <guid isPermaLink="true">http://localhost:4000/news/2016/07/20/workshop_creative_coding_verona.html</guid>
         
         <category>Processing</category>
         
