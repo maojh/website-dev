@@ -1,5 +1,7 @@
 ---
+username: cybermarinella
 display_name: cybermarinella
+email: marinella.mastrosimone@gmail.com
 about: Short bio di Marinella
 # Optional
 gravatar:
