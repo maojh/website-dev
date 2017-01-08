@@ -38,6 +38,26 @@
      ]
      
    }
+   ,
+   
+   {
+     "title"        : "Retini",
+     "author"       : "cybermarinella",
+     "description"  : "p5",
+     "url"         : "/project/2016/01/01/esempio_project_mari.html",
+     "href"         : "http://localhost:4000/js/projects/retini.js",
+     
+     "includes"     : [
+       
+       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"
+       ,
+       
+       "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/addons/p5.dom.min.js"
+       
+       
+     ]
+     
+   }
    
    
 ]

@@ -7,6 +7,7 @@ layout: default
     {% include icon-logo.html width="6em" %}
     <ul>
       <li class="item-title"></li>
+      <li class="item-author"></li>
       <li class="item-description"></li>
     </ul>
     <ul>
@@ -109,6 +110,7 @@ layout: default
 $(document).ready(function() {
   const $loading = $('#loading'),
         $title = $('.item-title'),
+        $author = $('.item-author'),
         $descript = $('.item-description'),
         actions = function() { pickAnotherItem(), loadScripts() };
         //intRandom = (n = 2) => n * Math.random() | 0;
@@ -151,7 +153,8 @@ $(document).ready(function() {
 
   function sketchLoaded() {
     $loading.hide();
-    $title.html(item.title + ' | ' + item.author);
+    $title.html(item.title);
+    $author.html(item.author); 
     $descript.html(item.description);
     $('.item-url a[href]').attr('href', '{{site.url}}'+item.url);
     window.p5 && (window.setup || window.draw) && new p5;
