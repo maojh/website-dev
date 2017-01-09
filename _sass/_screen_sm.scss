@@ -13,4 +13,13 @@ body{
 	.rowPadding{
 	  padding: 3em 0;
 	}
+	.collapse{
+	  display: block;
+	  opacity:1;
+	  position:relative;
+	}
+	.navbar-toggle{
+	  opacity:0;
+	  display: block;
+	}
 }

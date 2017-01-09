@@ -6079,8 +6079,7 @@ body {
     line-height: 1.2em; }
   body .navbar {
     background: rgba(242, 242, 242, 0.9); }
-  body blockquote {
-    margin: 1em 0;
+  body blockquote, body .navbar-toggle .icon-bar {
     -webkit-animation: background-change 30s infinite !important;
     -moz-animation: background-change 30s infinite !important;
     -o-animation: background-change 30s infinite !important;
@@ -6088,8 +6087,10 @@ body {
     animation: background-change 30s infinite !important;
     text-align: center;
     border: 0; }
-    body blockquote footer {
+    body blockquote footer, body .navbar-toggle .icon-bar footer {
       color: #f2f2f2; }
+  body blockquote {
+    margin: 1em 0; }
   body footer ul.social {
     margin-top: 2.5em;
     padding: 0; }
@@ -6120,6 +6121,17 @@ html, body {
 
 .navbar-collapse {
   margin-top: 1em; }
+
+.collapse {
+  display: block;
+  opacity: 0;
+  position: absolute; }
+
+.navbar-toggle {
+  opacity: 1;
+  display: block; }
+  .navbar-toggle .icon-bar {
+    margin: 0; }
 
 .rowPadding {
   padding: 30px;
@@ -6197,7 +6209,14 @@ html, body {
     opacity: 1;
     position: relative; }
   body .rowPadding {
-    padding: 3em 0; } }
+    padding: 3em 0; }
+  body .collapse {
+    display: block;
+    opacity: 1;
+    position: relative; }
+  body .navbar-toggle {
+    opacity: 0;
+    display: block; } }
 @media (min-width: 992px) {
   /*
    * Media Queries

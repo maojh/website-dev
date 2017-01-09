@@ -26,8 +26,8 @@
   <meta name="description" content="Codice Inutile &egrave; un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialit&agrave; del codice.">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="Codice Inutile" href="http://localhost:4000/feed.xml">
+  <link rel="canonical" href="https://cybermarinella.github.io/website-dev/">
+  <link rel="alternate" type="application/rss+xml" title="Codice Inutile" href="https://cybermarinella.github.io/website-dev/feed.xml">
   <!-- FONT AWESOME -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!-- GOOGLE SITE VERIFICATION -->
@@ -37,13 +37,13 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <!-- Begin Jekyll SEO tag v1.3.3 -->
+  <!-- Begin Jekyll SEO tag v2.0.0 -->
 <title>Codice Inutile - Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.</title>
 <meta property="og:title" content="Codice Inutile" />
 <meta name="description" content="Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice." />
 <meta property="og:description" content="Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice." />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="https://cybermarinella.github.io/website-dev/" />
+<meta property="og:url" content="https://cybermarinella.github.io/website-dev/" />
 <meta property="og:site_name" content="Codice Inutile" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@codiceinutile" />
@@ -58,7 +58,7 @@
     "name": "Codice Inutile",
     "headline": "Codice Inutile",
     "description": "Codice Inutile è un collettivo di artisti e programmatori nato per esplorare e diffondere la potenzialità del codice.",
-    "url": "http://localhost:4000/"
+    "url": "https://cybermarinella.github.io/website-dev/"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -72,21 +72,21 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="http://localhost:4000">codiceinutile</a>
+      <a class="navbar-brand" href="https://cybermarinella.github.io/website-dev">codiceinutile</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" >
+    <div id="navbar" class="collapse navbar-collapse" >
       <ul class="miniNav navbar-nav navbar-right">
-        <li><a href="http://localhost:4000/meetup.html">Circoli </a></li>
-        <li><a href="http://localhost:4000/persone.html">Persone</a></li>
-        <li><a href="http://localhost:4000/progetti.html">Exhibition</a></li>
+        <li><a href="https://cybermarinella.github.io/website-dev/meetup.html">Circoli </a></li>
+        <li><a href="https://cybermarinella.github.io/website-dev/persone.html">Persone</a></li>
+        <li><a href="https://cybermarinella.github.io/website-dev/progetti.html">Exhibition</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -98,7 +98,7 @@
     <div class="cover flexbox-container" id="myContainer">
   <div id="loading">&nbsp;</div>
   <div class="title">
-    <a href="http://localhost:4000">
+    <a href="https://cybermarinella.github.io/website-dev">
   <svg viewBox="0 0 2100 2200" xml:space="preserve" width="6em">
   	<polygon class="scuro" points="1400,400 1400,500 700,500 400,500 400,800 400,900 700,900 700,800 1400,800 1400,1200 1700,1200 1700,400 	"/>
   	<polygon class="scuro" points="700,1800 700,1700 1400,1700 1700,1700 1700,1400 1700,1300 1400,1300 1400,1400 700,1400 700,1000 400,1000
@@ -109,10 +109,11 @@
 
     <ul>
       <li class="item-title"></li>
+      <li class="item-author"></li>
       <li class="item-description"></li>
     </ul>
     <ul>
-      <li><a href="http://localhost:4000/progetti.html"><i class="fa fa-th" aria-hidden="true"></i></a></li>
+      <li><a href="https://cybermarinella.github.io/website-dev/progetti.html"><i class="fa fa-th" aria-hidden="true"></i></a></li>
       <li><a href="#" id="jsRefresh"><i class="fa fa-refresh" aria-hidden="true"></i></a></li>
       <li class="item-url"><a href="#"><i class="fa fa-code" aria-hidden="true"></i></a></li>
     </ul>
@@ -216,6 +217,7 @@
 $(document).ready(function() {
   const $loading = $('#loading'),
         $title = $('.item-title'),
+        $author = $('.item-author'),
         $descript = $('.item-description'),
         actions = function() { pickAnotherItem(), loadScripts() };
         //intRandom = (n = 2) => n * Math.random() | 0;
@@ -224,7 +226,7 @@ $(document).ready(function() {
 
   // Load the content dinamically
 
-  $.getJSON('http://localhost:4000/homepage.json', function(data) {
+  $.getJSON('https://cybermarinella.github.io/website-dev/homepage.json', function(data) {
     if (!data.length)  return $title.html('Error: the JSON array is empty');
 
     $.ajaxSetup({ cache: true });
@@ -258,9 +260,10 @@ $(document).ready(function() {
 
   function sketchLoaded() {
     $loading.hide();
-    $title.html(item.title + ' | ' + item.author);
+    $title.html(item.title);
+    $author.html(item.author); 
     $descript.html(item.description);
-    $('.item-url a[href]').attr('href', 'http://localhost:4000'+item.url);
+    $('.item-url a[href]').attr('href', 'https://cybermarinella.github.io/website-dev'+item.url);
     window.p5 && (window.setup || window.draw) && new p5;
   }
 
@@ -333,7 +336,7 @@ $(document).ready(function() {
   <!-- END GOOGLE ANALYTICS -->
 
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+  <script src="https://cybermarinella.github.io/website-dev/js/bootstrap.min.js"></script>
 
 </footer>
 

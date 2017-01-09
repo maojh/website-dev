@@ -34,8 +34,7 @@ body {
 
     }
 
-    blockquote{
-      margin: 1em 0;
+    blockquote, .navbar-toggle .icon-bar{
       -webkit-animation: background-change 30s infinite !important;
       -moz-animation: background-change 30s infinite !important;
       -o-animation: background-change 30s infinite !important;
@@ -46,6 +45,10 @@ body {
       footer{
         color: $white;
       }
+    }
+
+    blockquote{
+      margin: 1em 0;
     }
 
     footer{
@@ -87,6 +90,19 @@ html, body{
 }
 .navbar-collapse{
   margin-top: 1em;
+}
+.collapse{ 
+  display: block; //don't reset color animation loop
+  opacity:0;
+  position:absolute;
+}
+
+.navbar-toggle{
+  opacity:1;
+  display: block;
+  .icon-bar{
+    margin: 0;
+  }
 }
 
 .rowPadding{
