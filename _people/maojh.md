@@ -2,14 +2,14 @@
 # User Info
 username: maojh
 display_name: Matteo Testa
-email:
-about:
+email: mjh.ilbasco@gmail.com
+about: Designer, Art Director, Creative Coder
 # Optional
 gravatar:
 url:
 twitter:
-facebook:
-github:
+facebook: https://www.facebook.com/matteo.testa?ref=bookmarks
+github:https://github.com/maojh
 # Template
 layout: people
 ---
